@@ -38,7 +38,7 @@ object Configuration {
 
     val APPLICATION_IMAGE_URL: EnvironmentVariable<String> = EnvironmentVariable(
         Configuration::APPLICATION_IMAGE_URL,
-        "static/logo.svg",
+        "static/logo.png",
         String::toString
     )
 

@@ -37,7 +37,7 @@ fun HTML.index() {
         }
         meta {
             attributes["property"] = "og:image"
-            content = "static/logo.png"
+            content = Configuration.APPLICATION_IMAGE_URL.value
         }
         meta {
             attributes["property"] = "og:type"
