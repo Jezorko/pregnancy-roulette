@@ -15,6 +15,14 @@ external interface RandomPregnancyRisksListProps : Props {
 
 val allRisksPromise = ApiClient.getAllRisks()
 
+fun randomRisksFrom(random: Random, risks: List<PregnancyRisk>): List<PregnancyRisk> {
+    risks.shuffled(random)
+        .filter { risk -> risk.chance >= random.nextDouble(0.0, 1.0) }
+        .flatMap { risk ->
+            listOf(risk) + randomRisksFrom(random, risk.consecutiveRisks)
+        }
+}
+
 val RandomPregnancyRisksList = FC<RandomPregnancyRisksListProps> { props ->
 
     var latestResultId: Int? by useState(null)
@@ -26,9 +34,7 @@ val RandomPregnancyRisksList = FC<RandomPregnancyRisksListProps> { props ->
         val random = Random(resultId)
 
         allRisksPromise.then { allRisks ->
-            risks = allRisks.shuffled(random)
-                .filter { risk -> risk.chance >= random.nextDouble(0.0, 1.0) }
-                .ifEmpty { listOf(healthyBaby) }
+            risks = randomRisksFrom(random, allRisks).ifEmpty { listOf(healthyBaby) }
         }
     }
 

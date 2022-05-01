@@ -25,6 +25,71 @@
         ],
         "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5013086/"
       }
+    ],
+    "consecutiveRisks": []
+  },
+  {
+    "name": "Perineal Lacerations",
+    "commonNames": [
+      "Vaginal Tearing"
+    ],
+    "description": "Vaginal Tearing is a laceration of the skin and other soft tissue structures separating the vagina from the anus. The condition varies widely in severity and 60-80% of affected persons will recover after 12 months, but it may result in permanent damage.",
+    "images": [
+      {
+        "url": "https://i0.wp.com/medicoapps.org/wp-content/uploads/2018/10/1521425654.jpg",
+        "description": "Illustration of first and second degree Perineal Tearing.",
+        "source": "https://medicoapps.org/perineal-lacerations-2/"
+      },
+      {
+        "url": "https://i0.wp.com/medicoapps.org/wp-content/uploads/2018/10/1521425791.jpg",
+        "description": "Illustration of third and fourth degree Perineal Tearing.",
+        "source": "https://medicoapps.org/perineal-lacerations-2/"
+      }
+    ],
+    "chance": 0.85,
+    "references": [
+      {
+        "name": "Perineal care",
+        "authors": [
+          "Chris K",
+          "Susan T"
+        ],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/19445799/"
+      },
+      {
+        "name": "Repair of perineal and other lacerations associated with childbirth",
+        "authors": [
+          "Marc R Toglia, MD"
+        ],
+        "url": "https://www.uptodate.com/contents/repair-of-perineal-and-other-lacerations-associated-with-childbirth"
+      }
+    ],
+    "consecutiveRisks": [
+      {
+        "name": "Clitoral Tearing",
+        "commonNames": [],
+        "description": "A more severe case of Perineal Lacerations resulting in a torn clitoral hood. Yes, it's as bad as it sounds.",
+        "images": [],
+        "chance": 0.02,
+        "references": [
+          {
+            "name": "Traumatic Periurethral Tear And Posterior Dislocation Of External Urinary Meatus",
+            "authors": [
+              "Pednekar R",
+              "Parulekar SV"
+            ],
+            "url": "http://www.jpgo.org/2018/09/traumatic-periurethral-tear-and.html"
+          },
+          {
+            "name": "I tore my clitoris giving birth",
+            "authors": [
+              "Today's Parent"
+            ],
+            "url": "https://www.todaysparent.com/pregnancy/giving-birth/i-tore-my-clitoris-giving-birth/"
+          }
+        ],
+        "consecutiveRisks": []
+      }
     ]
   }
 ]

@@ -14,7 +14,8 @@ val healthyBaby = PregnancyRisk(
         )
     ),
     chance = 0.0,
-    references = emptyList()
+    references = emptyList(),
+    consecutiveRisks = emptyList()
 )
 
 @Serializable
@@ -24,7 +25,8 @@ data class PregnancyRisk(
     val description: String,
     val images: List<PregnancyRiskImage>,
     val chance: Double,
-    val references: List<PregnancyRiskReference>
+    val references: List<PregnancyRiskReference>,
+    val consecutiveRisks: List<PregnancyRisk>
 ) {
     init {
         if (chance < 0 || chance > 1) {
