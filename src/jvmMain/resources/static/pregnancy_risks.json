@@ -116,7 +116,7 @@
   {
     "name": "Miscarriage",
     "commonNames": [],
-    "description": "An early loss of a pregnancy, which usually happens in the first trimester. Between 10 and 15 percent of known pregnancies end this way. On the bright side, any other things mentioned on this page likely no longer apply!",
+    "description": "An early loss of a pregnancy, which usually happens in the first trimester. Between 10 and 15 percent of known pregnancies end this way. On the bright side, any other things mentioned on this page likely no longer applies!",
     "images": [
       {
         "url": "https://media.istockphoto.com/photos/miscarriage-picture-id1329860858?k=20&m=1329860858&s=612x612&w=0&h=DCTpE75b2UoyVMyhg348bCGqDqIrecWKKvQXPJFXc3M=",
@@ -156,6 +156,32 @@
         "name": "Preeclampsia",
         "authors": [],
         "url": "https://www.mayoclinic.org/diseases-conditions/preeclampsia/symptoms-causes/syc-20355745"
+      }
+    ],
+    "consecutiveRisks": []
+  },
+  {
+    "name": "Postpartum Hemorrhage",
+    "commonNames": [],
+    "description": "Potentially dangerous blood clots that may travel to lungs. Causes approx. 8% of maternal deaths in developed countries.",
+    "images": [
+      {
+        "url": "https://www.veincenteratiowaheart.com/upl/images/blog/everything-you-need-to-know-about-blood-clots.jpg",
+        "description": "Picture of a blood cloth travelling through bloodstream.",
+        "source": "https://www.veincenteratiowaheart.com/blog/everything-you-need-to-know-about-blood-clots/"
+      }
+    ],
+    "chance": 0.04,
+    "references": [
+      {
+        "name": "‘I thought I was going to die’: Ashley’s postpartum hemorrhage story",
+        "authors": ["Jamie Morgan, M.D."],
+        "url": "https://utswmed.org/medblog/postpartum-hemorrhage-patient-story/"
+      },
+      {
+        "name": "Blood Clots After Birth: What You Need to Know",
+        "authors": [],
+        "url": "https://www.healthline.com/health/pregnancy/blood-clots-after-birth"
       }
     ],
     "consecutiveRisks": []
