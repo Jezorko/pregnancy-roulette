@@ -1,0 +1,1 @@
+web: build/install/pregnancy-roulette/bin/pregnancy-roulette
