@@ -4,7 +4,7 @@ import kotlinx.serialization.Serializable
 
 val healthyBaby = PregnancyRisk(
     name = "Congratulations!",
-    description = "You were lucky enough to birth a healthy baby, but remember that this list of potential side-effects is not exhaustive.",
+    description = "You were lucky enough to birth a healthy baby and have no side effects, but remember that this list is not exhaustive.",
     commonNames = emptyList(),
     images = listOf(
         PregnancyRiskImage(
