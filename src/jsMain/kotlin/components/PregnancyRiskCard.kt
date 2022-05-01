@@ -59,8 +59,8 @@ val PregnancyRiskCard = FC<PregnancyRiskCardProps> { props ->
                         id = "$prefix-${props.position}-references"
                         className = "$prefix-references"
                         +"References: "
-                        br {}
                         pregnancyRisk.references.forEachIndexed { index, reference ->
+                            br {}
                             a {
                                 id = "$prefix-${props.position}-reference-$index"
                                 className = "$prefix-reference"
