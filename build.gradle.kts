@@ -77,3 +77,17 @@ tasks.named<JavaExec>("run") {
     dependsOn(tasks.named<Jar>("jvmJar"))
     classpath(tasks.named<Jar>("jvmJar"))
 }
+
+tasks.create("stage") { dependsOn(tasks.getByName("installDist")) }
+
+// only necessary until https://youtrack.jetbrains.com/issue/KT-37964 is resolved
+distributions {
+    main {
+        contents {
+            from("$buildDir/libs") {
+                rename("${rootProject.name}-jvm", rootProject.name)
+                into("lib")
+            }
+        }
+    }
+}
