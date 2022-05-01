@@ -1,3 +1,1 @@
-
-rootProject.name = "pregnancy-risks"
-
+rootProject.name = "pregnancy-roulette"
