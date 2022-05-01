@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="13.024107mm"
+   height="38.277897mm"
+   viewBox="0 0 13.024107 38.277896"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="drawing-1.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="5.1812009"
+     inkscape:cx="18.721528"
+     inkscape:cy="75.46513"
+     inkscape:window-width="1916"
+     inkscape:window-height="1041"
+     inkscape:window-x="0"
+     inkscape:window-y="1115"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <mask
+       id="c"
+       x="-3"
+       y="-3"
+       width="6"
+       height="6"
+       maskUnits="userSpaceOnUse">
+      <circle
+         r="1.625"
+         fill="none"
+         stroke="#ffffff"
+         stroke-width="1.75"
+         id="circle1718"
+         cx="0"
+         cy="0" />
+    </mask>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-75.525651,-57.284616)">
+    <ellipse
+       style="fill:#d43000;stroke:none;stroke-width:0.600001;stroke-linejoin:round"
+       id="path858"
+       cx="79.829781"
+       cy="61.569279"
+       rx="4.3041296"
+       ry="4.2846627" />
+    <path
+       style="fill:#e8bf28;fill-opacity:1;stroke:none;stroke-width:0.0818854;stroke-linejoin:round;stroke-opacity:1"
+       d="m 79.453922,95.529935 c -0.3892,-0.07659 -0.84716,-0.370666 -1.27519,-0.818841 l -0.27583,-0.288814 -0.0221,-0.555262 c -0.0122,-0.305398 -0.0261,-6.617716 -0.0311,-14.02738 l -0.009,-13.472112 1.11938,-0.02487 1.11938,-0.02487 2.15808,2.176764 c 2.01836,2.035839 2.16681,2.194163 2.29293,2.445565 0.11925,0.237712 0.13631,0.305379 0.14741,0.58502 0.0155,0.390364 -0.0711,0.682263 -0.30635,1.033148 -0.0877,0.130788 -0.15498,0.249946 -0.14949,0.264797 0.005,0.01484 0.15622,0.123029 0.33495,0.240393 0.54,0.354568 1.05539,0.784529 1.60706,1.340681 0.79738,0.803846 1.25008,1.431991 1.68174,2.333492 0.49784,1.03971 0.70266,2.032537 0.70396,3.412313 0.003,2.878307 -1.21704,5.022252 -3.3688,5.921333 -0.88938,0.371615 -2.04077,0.543126 -3.1711,0.472368 -0.28706,-0.01796 -0.52863,-0.02598 -0.5368,-0.01781 -0.008,0.0082 -0.0221,1.725213 -0.0309,3.81563 l -0.016,3.800761 -0.12408,0.225057 c -0.34468,0.625197 -0.84081,1.054375 -1.3417,1.160653 -0.21504,0.04563 -0.2832,0.04589 -0.50642,0.0019 z"
+       id="path14165"
+       sodipodi:nodetypes="cscccccccscccccscsccscsscc" />
+    <path
+       style="fill:#e8bf28;fill-opacity:1;stroke:none;stroke-width:0.309488;stroke-linejoin:round;stroke-opacity:1"
+       d="m 298.89451,248.58401 c -6.61397,-1.24655 -11.7106,-6.2271 -13.05166,-12.75441 -0.41427,-2.01635 -0.32888,-5.15944 0.19465,-7.16496 0.41646,-1.59534 1.67961,-4.24458 2.60284,-5.45902 4.84532,-6.37364 13.02168,-8.39221 20.12973,-4.9696 8.7906,4.23277 11.82069,15.07627 6.49989,23.26055 -1.03331,1.58941 -3.05916,3.61525 -4.64857,4.64857 -1.4881,0.96745 -3.25052,1.7461 -4.98459,2.20224 -1.66466,0.43788 -5.04499,0.55652 -6.74229,0.23663 z"
+       id="path14204"
+       transform="scale(0.26458333)" />
+    <g
+       transform="matrix(1.3993985,0,0,1.3993985,83.698853,80.052767)"
+       id="g1737">
+      <circle
+         r="0.5"
+         id="circle1725"
+         cx="0"
+         cy="0" />
+      <g
+         mask="url(#c)"
+         id="g1735">
+        <g
+           id="a">
+          <path
+             id="b"
+             transform="rotate(30)"
+             d="M 0,0 V 2.88 H 3" />
+          <use
+             transform="scale(-1,1)"
+             xlink:href="#b"
+             id="use1728"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%" />
+        </g>
+        <use
+           transform="rotate(120)"
+           xlink:href="#a"
+           id="use1731"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%" />
+        <use
+           transform="rotate(-120)"
+           xlink:href="#a"
+           id="use1733"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%" />
+      </g>
+    </g>
+  </g>
+</svg>

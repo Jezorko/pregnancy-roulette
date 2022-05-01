@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="128.53098mm"
+   height="113.92442mm"
+   viewBox="0 0 128.53098 113.92442"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="drawing.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.8318311"
+     inkscape:cx="270.22142"
+     inkscape:cy="231.73534"
+     inkscape:window-width="1920"
+     inkscape:window-height="1080"
+     inkscape:window-x="0"
+     inkscape:window-y="1080"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <defs
+     id="defs2">
+    <rect
+       x="291.55829"
+       y="372.2485"
+       width="270.75323"
+       height="123.49295"
+       id="rect13698" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-45.811966,-78.365489)">
+    <ellipse
+       style="fill:#916f6f;fill-opacity:1;stroke:#050000;stroke-width:0.68589;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4751-3-6"
+       cx="110.07745"
+       cy="148.44345"
+       rx="63.922543"
+       ry="43.503517" />
+    <ellipse
+       style="fill:#ac9393;fill-opacity:1;stroke:#050000;stroke-width:0.676936;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4751-3"
+       cx="109.69347"
+       cy="139.79141"
+       rx="62.258205"
+       ry="43.507996" />
+    <ellipse
+       style="fill:#c8b7b7;fill-opacity:1;stroke:#050000;stroke-width:0.6;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4751"
+       cx="110.11185"
+       cy="138.70901"
+       rx="57.065392"
+       ry="37.290668" />
+    <path
+       style="fill:#c60000;fill-opacity:1;stroke:#050000;stroke-width:0.6;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       d="m 57.047717,133.20268 -0.197456,8.67606 c 0,0 1.390166,27.75441 53.937689,31.299 0,0 38.50058,2.99984 52.71708,-29.87487 l -0.15509,-12.06047 z"
+       id="path2057"
+       sodipodi:nodetypes="cccccc" />
+    <ellipse
+       style="fill:#d43000;fill-opacity:1;stroke:#000000;stroke-width:0.6;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path43"
+       cx="110.32827"
+       cy="133.72339"
+       rx="53.159885"
+       ry="35.309761" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.42541918,0,0,0.42541918,-72.072021,-49.193842)"
+       id="text13696"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;text-align:center;white-space:pre;shape-inside:url(#rect13698);fill:#000000;fill-opacity:1;stroke:none"
+       x="195.89844"
+       y="0"><tspan
+         x="392.19922"
+         y="408.64305"
+         id="tspan1779"><tspan
+           style="font-family:'Droid Sans';-inkscape-font-specification:'Droid Sans, Normal'"
+           id="tspan1777">GET
+</tspan></tspan><tspan
+         x="327.56055"
+         y="459.59609"
+         id="tspan1783"><tspan
+           style="font-family:'Droid Sans';-inkscape-font-specification:'Droid Sans, Normal'"
+           id="tspan1781">PREGNANT</tspan></tspan></text>
+  </g>
+</svg>

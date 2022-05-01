@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Diastasis Recti",
+    "commonNames": [
+      "Mother's Apron"
+    ],
+    "description": "\"Mother's Apron\" is a common condition, defined as a separation of the 2 muscle bellies of rectus abdominis. It may persist for months or years postpartum and may require a surgery to be fixed.",
+    "images": [
+      {
+        "url": "https://406044-1278364-1-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2020/12/7d0d6e40114dbed7e903c08b2e8fa80e.jpg",
+        "description": "Side and front view of Mother's Apron.",
+        "source": "https://momababyetc.com/cause-of-mothers-apron-belly-after-pregnancy/"
+      }
+    ],
+    "chance": 0.6,
+    "references": [
+      {
+        "name": "Diastasis recti abdominis during pregnancy and 12 months after childbirth: prevalence, risk factors and report of lumbopelvic pain",
+        "authors": [
+          "Sperstad JB",
+          "Tennfjord MK",
+          "Hilde G",
+          "Ellstrom-Engh M",
+          "Bo K"
+        ],
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5013086/"
+      }
+    ]
+  }
+]
