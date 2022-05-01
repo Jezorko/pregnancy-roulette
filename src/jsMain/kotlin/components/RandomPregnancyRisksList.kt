@@ -16,7 +16,7 @@ external interface RandomPregnancyRisksListProps : Props {
 val allRisksPromise = ApiClient.getAllRisks()
 
 fun randomRisksFrom(random: Random, risks: List<PregnancyRisk>): List<PregnancyRisk> {
-    risks.shuffled(random)
+    return risks.shuffled(random)
         .filter { risk -> risk.chance >= random.nextDouble(0.0, 1.0) }
         .flatMap { risk ->
             listOf(risk) + randomRisksFrom(random, risk.consecutiveRisks)
