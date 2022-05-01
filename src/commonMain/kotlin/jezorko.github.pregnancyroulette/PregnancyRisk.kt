@@ -49,6 +49,7 @@ data class PregnancyRiskReference(
     val url: String
 ) {
     override fun toString(): String {
-        return "${authors.joinToString(", ")}. $name."
+        return if (authors.isEmpty()) "$name."
+        else "${authors.joinToString(", ")}. $name."
     }
 }
