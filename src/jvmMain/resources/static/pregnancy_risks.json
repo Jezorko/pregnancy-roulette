@@ -133,5 +133,31 @@
       }
     ],
     "consecutiveRisks": []
+  },
+  {
+    "name": "Preeclampsia",
+    "commonNames": [],
+    "description": "Complication of pregnancy which can cause high blood pressure and kidney or other organ damage. If left untreated, it can lead to serious or fatal complications.",
+    "images": [
+      {
+        "url": "https://www.marchofdimes.org/glue/css-images/Preeclampsia-chart.jpg",
+        "description": "A chart describing symptoms of Preeclampsia.",
+        "source": "https://www.marchofdimes.org/"
+      }
+    ],
+    "chance": 0.05,
+    "references": [
+      {
+        "name": "Preeclampsia Foundation FAQ",
+        "authors": [],
+        "url": "https://www.preeclampsia.org/faqs"
+      },
+      {
+        "name": "Preeclampsia",
+        "authors": [],
+        "url": "https://www.mayoclinic.org/diseases-conditions/preeclampsia/symptoms-causes/syc-20355745"
+      }
+    ],
+    "consecutiveRisks": []
   }
 ]
