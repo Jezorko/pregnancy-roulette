@@ -8,7 +8,7 @@
     "isNegative": true,
     "tags": {
       "own": [
-        "postpartum"
+        "postpartum-mother"
       ]
     },
     "images": [
@@ -43,7 +43,7 @@
     "isNegative": true,
     "tags": {
       "own": [
-        "postpartum"
+        "postpartum-mother"
       ]
     },
     "images": [
@@ -84,7 +84,7 @@
         "isNegative": true,
         "tags": {
           "own": [
-            "postpartum"
+            "postpartum-mother"
           ]
         },
         "images": [],
@@ -117,7 +117,7 @@
     "isNegative": true,
     "tags": {
       "own": [
-        "postpartum"
+        "postpartum-child"
       ]
     },
     "images": [
@@ -144,7 +144,8 @@
     "isNegative": true,
     "tags": {
       "excludes": [
-        "postpartum"
+        "postpartum-child",
+        "postpartum-mother"
       ]
     },
     "images": [
@@ -171,7 +172,7 @@
     "isNegative": true,
     "tags": {
       "own": [
-        "postpartum"
+        "postpartum-mother"
       ]
     },
     "images": [
@@ -203,7 +204,7 @@
     "isNegative": true,
     "tags": {
       "own": [
-        "postpartum"
+        "postpartum-mother"
       ]
     },
     "images": [
@@ -226,6 +227,33 @@
         "name": "Blood Clots After Birth: What You Need to Know",
         "authors": [],
         "url": "https://www.healthline.com/health/pregnancy/blood-clots-after-birth"
+      }
+    ],
+    "consecutiveOutcomes": []
+  },
+  {
+    "name": "Maternal Mortality",
+    "commonNames": [],
+    "description": "You are dead. This is based on global mortality rate, so your chances may differ depending on where you live.",
+    "isNegative": true,
+    "tags": {
+      "own": [
+        "postpartum-mother"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://c.pxhere.com/images/60/1c/4df5a526af6e0e21501fb8bf7410-1606808.jpg!d",
+        "description": "Photograph of a cemetary.",
+        "source": "https://pxhere.com/en/photo/1606808"
+      }
+    ],
+    "chance": 0.000238,
+    "references": [
+      {
+        "name": "Historical Progress for Maternal Mortality (statistics for 2020)",
+        "authors": [],
+        "url": "https://www.gatesfoundation.org/goalkeepers/report/2021-report/progress-indicators/maternal-mortality/"
       }
     ],
     "consecutiveOutcomes": []
