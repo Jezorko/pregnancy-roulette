@@ -583,5 +583,34 @@
       }
     ],
     "consecutiveOutcomes": []
+  },
+  {
+    "name": "Pregnancy Gingivitis",
+    "commonNames": [
+      "Bleeding Gums"
+    ],
+    "description": "Treated with antibiotics and prescription-strength mouthwashes that target gum disease.",
+    "isNegative": true,
+    "tags": {
+      "own": [
+        "postpartum-mother"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Krvozuby.jpg?20080223142213",
+        "description": "Photo of teeth with bleeding gums.",
+        "source": "https://commons.wikimedia.org/wiki/File:Krvozuby.jpg"
+      }
+    ],
+    "chance": 0.6,
+    "references": [
+      {
+        "name": "Bleeding gums during pregnancy",
+        "authors": [],
+        "url": "https://www.babycenter.com/pregnancy/health-and-safety/bleeding-gums-during-pregnancy_217"
+      }
+    ],
+    "consecutiveOutcomes": []
   }
 ]
