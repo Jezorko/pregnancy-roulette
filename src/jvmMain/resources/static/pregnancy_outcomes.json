@@ -766,7 +766,7 @@
     "consecutiveOutcomes": []
   },
   {
-    "name": "Anemia",
+    "name": "Anaemia",
     "commonNames": [],
     "description": "A lack enough healthy red blood cells to carry adequate oxygen to your body's tissues. Potentially life-threatening.",
     "isNegative": true,
@@ -778,7 +778,7 @@
     "images": [
       {
         "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Anemia.JPG",
-        "description": "Photo of a hand of a person with anemia.",
+        "description": "Photo of a hand of a person with anaemia.",
         "source": "https://commons.wikimedia.org/wiki/File:Anemia.JPG"
       }
     ],
