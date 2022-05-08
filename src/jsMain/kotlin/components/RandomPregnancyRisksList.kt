@@ -34,7 +34,13 @@ val RandomPregnancyRisksList = FC<RandomPregnancyRisksListProps> { props ->
         val random = Random(resultId)
 
         allRisksPromise.then { allRisks ->
-            risks = randomRisksFrom(random, allRisks).ifEmpty { listOf(healthyBaby) }
+            val selectedRisks = randomRisksFrom(random, allRisks).ifEmpty { listOf(healthyBaby) }
+            val filteredRisks = selectedRisks.foldRight(selectedRisks) { currentRisk, filteredRisks ->
+                filteredRisks.filter { risk ->
+                    risk == currentRisk || risk.tags.own.none(currentRisk.tags.excludes::contains)
+                }
+            }
+            risks = filteredRisks
         }
     }
 

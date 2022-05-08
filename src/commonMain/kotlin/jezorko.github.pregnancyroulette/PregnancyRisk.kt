@@ -6,6 +6,7 @@ val healthyBaby = PregnancyRisk(
     name = "Congratulations!",
     description = "You were lucky enough to birth a healthy baby and have no side effects, but remember that this list is not exhaustive.",
     commonNames = emptyList(),
+    tags = Tags(),
     images = listOf(
         PregnancyRiskImage(
             url = "https://mothertobaby.org/wp-content/uploads/2020/06/MotherToBaby-Homepage-Header-1600x900-1.jpg",
@@ -19,10 +20,17 @@ val healthyBaby = PregnancyRisk(
 )
 
 @Serializable
+data class Tags(
+    val own: Set<String> = emptySet(),
+    val excludes: Set<String> = emptySet()
+)
+
+@Serializable
 data class PregnancyRisk(
     val name: String,
     val commonNames: List<String>,
     val description: String,
+    val tags: Tags,
     val images: List<PregnancyRiskImage>,
     val chance: Double,
     val references: List<PregnancyRiskReference>,

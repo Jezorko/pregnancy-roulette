@@ -5,6 +5,11 @@
       "Mother's Apron"
     ],
     "description": "\"Mother's Apron\" is a common condition, defined as a separation of the 2 muscle bellies of rectus abdominis. It may persist for months or years postpartum and may require a surgery to be fixed.",
+    "tags": {
+      "own": [
+        "postpartum"
+      ]
+    },
     "images": [
       {
         "url": "https://406044-1278364-1-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2020/12/7d0d6e40114dbed7e903c08b2e8fa80e.jpg",
@@ -34,6 +39,11 @@
       "Vaginal Tearing"
     ],
     "description": "Vaginal Tearing is a laceration of the skin and other soft tissue structures separating the vagina from the anus. The condition varies widely in severity and 60-80% of affected persons will recover after 12 months, but it may result in permanent damage.",
+    "tags": {
+      "own": [
+        "postpartum"
+      ]
+    },
     "images": [
       {
         "url": "https://i0.wp.com/medicoapps.org/wp-content/uploads/2018/10/1521425654.jpg",
@@ -69,6 +79,11 @@
         "name": "Clitoral Tearing",
         "commonNames": [],
         "description": "A more severe case of Perineal Lacerations resulting in a torn clitoral hood. Yes, it's as bad as it sounds.",
+        "tags": {
+          "own": [
+            "postpartum"
+          ]
+        },
         "images": [],
         "chance": 0.02,
         "references": [
@@ -96,6 +111,11 @@
     "name": "Harlequin Ichthyosis",
     "commonNames": [],
     "description": "Severe genetic disorder that affects the infant's skin.",
+    "tags": {
+      "own": [
+        "postpartum"
+      ]
+    },
     "images": [
       {
         "url": "https://medical-junction.com/wp-content/uploads/2019/11/img_3948.jpg",
@@ -116,7 +136,12 @@
   {
     "name": "Miscarriage",
     "commonNames": [],
-    "description": "An early loss of a pregnancy, which usually happens in the first trimester. Between 10 and 15 percent of known pregnancies end this way. On the bright side, any other things mentioned on this page likely no longer applies!",
+    "description": "An early loss of a pregnancy, which usually happens in the first trimester. Between 10 and 15 percent of known pregnancies end this way.",
+    "tags": {
+      "excludes": [
+        "postpartum"
+      ]
+    },
     "images": [
       {
         "url": "https://media.istockphoto.com/photos/miscarriage-picture-id1329860858?k=20&m=1329860858&s=612x612&w=0&h=DCTpE75b2UoyVMyhg348bCGqDqIrecWKKvQXPJFXc3M=",
@@ -138,6 +163,11 @@
     "name": "Preeclampsia",
     "commonNames": [],
     "description": "Complication of pregnancy which can cause high blood pressure and kidney or other organ damage. If left untreated, it can lead to serious or fatal complications.",
+    "tags": {
+      "own": [
+        "postpartum"
+      ]
+    },
     "images": [
       {
         "url": "https://www.marchofdimes.org/glue/css-images/Preeclampsia-chart.jpg",
@@ -164,6 +194,11 @@
     "name": "Postpartum Hemorrhage",
     "commonNames": [],
     "description": "Potentially dangerous blood clots that may travel to lungs. Causes approx. 8% of maternal deaths in developed countries.",
+    "tags": {
+      "own": [
+        "postpartum"
+      ]
+    },
     "images": [
       {
         "url": "https://www.veincenteratiowaheart.com/upl/images/blog/everything-you-need-to-know-about-blood-clots.jpg",
@@ -175,7 +210,9 @@
     "references": [
       {
         "name": "‘I thought I was going to die’: Ashley’s postpartum hemorrhage story",
-        "authors": ["Jamie Morgan, M.D."],
+        "authors": [
+          "Jamie Morgan, M.D."
+        ],
         "url": "https://utswmed.org/medblog/postpartum-hemorrhage-patient-story/"
       },
       {
