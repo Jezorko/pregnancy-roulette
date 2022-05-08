@@ -508,5 +508,44 @@
       }
     ],
     "consecutiveOutcomes": []
+  },
+  {
+    "name": "Vaginal Candidiasis",
+    "commonNames": [
+      "Vaginal Yeast Infection"
+    ],
+    "description": "Symptoms include: itching or soreness, pain during sexual intercourse, pain or discomfort when urinating and abnormal vaginal discharge.",
+    "isNegative": true,
+    "tags": {
+      "own": [
+        "during-pregnancy-mother"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Candida_albicans_2.jpg",
+        "description": "Microscope photo of yeast cells.",
+        "source": "https://commons.wikimedia.org/wiki/File:Candida_albicans_2.jpg"
+      }
+    ],
+    "chance": 0.1,
+    "references": [
+      {
+        "name": "PURLs: Yeast infection in pregnancy? Think twice about fluconazole",
+        "authors": [
+          "Amir Barzin, DO, MS",
+          "Anne Mounsey, MD"
+        ],
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5116200/"
+      },
+      {
+        "name": "Vaginal Candidiasis",
+        "authors": [
+          "CDC"
+        ],
+        "url": "https://www.cdc.gov/fungal/diseases/candidiasis/genital/index.html"
+      }
+    ],
+    "consecutiveOutcomes": []
   }
 ]
