@@ -257,5 +257,198 @@
       }
     ],
     "consecutiveOutcomes": []
+  },
+  {
+    "name": "Postpartum Depression",
+    "commonNames": [
+      "Baby Blues"
+    ],
+    "description": "Chances vary significantly between countries. Generally lasts 3 to 6 months.",
+    "isNegative": true,
+    "tags": {
+      "own": [
+        "postpartum-mother"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikiversity/en/a/ae/Person-Young-Sad-Depressed-Depression-Sadness-505857.jpg",
+        "description": "Photograph of a depressed person.",
+        "source": "https://en.wikiversity.org/wiki/File:Person-Young-Sad-Depressed-Depression-Sadness-505857.jpg"
+      }
+    ],
+    "chance": 0.15,
+    "references": [
+      {
+        "name": "Postpartum Depression Statistics",
+        "authors": [],
+        "url": "https://www.postpartumdepression.org/resources/statistics/"
+      },
+      {
+        "name": "Postpartum depression",
+        "authors": [
+          "Mayo Clinic"
+        ],
+        "url": "https://www.mayoclinic.org/diseases-conditions/postpartum-depression/symptoms-causes/syc-20376617"
+      }
+    ],
+    "consecutiveOutcomes": [
+      {
+        "name": "Postpartum Anxiety",
+        "commonNames": [],
+        "description": "A feeling of fear, dread, and uneasiness. Affects roughly 75% of women with maternal depression.",
+        "isNegative": true,
+        "tags": {
+          "own": [
+            "postpartum-mother"
+          ]
+        },
+        "images": [
+          {
+            "url": "https://live.staticflickr.com/65535/50017873121_9dc3b90e94_c.jpg",
+            "description": "Portrait of a girl with hands near her face.",
+            "source": "https://www.flickr.com/photos/30478819@N08/50017873121"
+          }
+        ],
+        "chance": 0.75,
+        "references": [
+          {
+            "name": "Postpartum Depression Statistics",
+            "authors": [],
+            "url": "https://www.postpartumdepression.org/resources/statistics/"
+          },
+          {
+            "name": "Anxiety",
+            "authors": [
+              "MedlinePlus"
+            ],
+            "url": "https://medlineplus.gov/anxiety.html"
+          }
+        ],
+        "consecutiveOutcomes": []
+      }
+    ]
+  },
+  {
+    "name": "Postpartum OCD",
+    "commonNames": [],
+    "description": "Mental disorder in which a person has uncontrollable, reoccurring thoughts and/or behaviors. More common for persons with a past history of OCD.",
+    "isNegative": true,
+    "tags": {
+      "own": [
+        "postpartum-mother"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/82/OCD_-_Obsessive%E2%80%93compulsive_disorder.jpg",
+        "description": "Rendered image of a brain with activated regions.",
+        "source": "https://commons.wikimedia.org/wiki/File:OCD_-_Obsessive%E2%80%93compulsive_disorder.jpg"
+      }
+    ],
+    "chance": 0.04,
+    "references": [
+      {
+        "name": "Postpartum Depression Statistics",
+        "authors": [],
+        "url": "https://www.postpartumdepression.org/resources/statistics/"
+      },
+      {
+        "name": "Obsessive-Compulsive Disorder",
+        "authors": [
+          "National Institute of Mental Health"
+        ],
+        "url": "https://www.nimh.nih.gov/health/topics/obsessive-compulsive-disorder-ocd"
+      }
+    ],
+    "consecutiveOutcomes": []
+  },
+  {
+    "name": "Postpartum Panic Disorder",
+    "commonNames": [],
+    "description": "The symptoms of postpartum panic disorder typically appear only a few days after giving birth. However, some women experience symptoms for the first time later, anytime during the first year of motherhood.",
+    "isNegative": true,
+    "tags": {
+      "own": [
+        "postpartum-mother"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Panic_button.jpg",
+        "description": "Photo of a red keyboard button with \"PANIC\" written on it.",
+        "source": "https://upload.wikimedia.org/wikipedia/commons/1/11/Panic_button.jpg"
+      }
+    ],
+    "chance": 0.07,
+    "references": [
+      {
+        "name": "Postpartum Depression Statistics",
+        "authors": [],
+        "url": "https://www.postpartumdepression.org/resources/statistics/"
+      }
+    ],
+    "consecutiveOutcomes": []
+  },
+  {
+    "name": "Postpartum PTSD",
+    "commonNames": [],
+    "description": "Symptoms include: flashbacks (reliving the trauma), bad dreams, frightening thoughts. If there were complications to pregnancy, the chances rise to around 30% for new mothers.",
+    "isNegative": true,
+    "tags": {
+      "own": [
+        "postpartum-mother"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Panic_button.jpg",
+        "description": "Photo of a red keyboard button with \"PANIC\" written on it.",
+        "source": "https://upload.wikimedia.org/wikipedia/commons/1/11/Panic_button.jpg"
+      }
+    ],
+    "chance": 0.1,
+    "references": [
+      {
+        "name": "Postpartum Depression Statistics",
+        "authors": [],
+        "url": "https://www.postpartumdepression.org/resources/statistics/"
+      },
+      {
+        "name": "Post-Traumatic Stress Disorder",
+        "authors": [
+          "National Institute of Mental Health"
+        ],
+        "url": "https://www.nimh.nih.gov/health/topics/post-traumatic-stress-disorder-ptsd"
+      }
+    ],
+    "consecutiveOutcomes": []
+  },
+  {
+    "name": "Postpartum Psychosis",
+    "commonNames": [],
+    "description": "A severe and potentially deadly disorder. Around 10% of postpartum psychosis cases result in suicide or infanticide.",
+    "isNegative": true,
+    "tags": {
+      "own": [
+        "postpartum-mother"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://cdn.pixabay.com/photo/2017/10/22/09/03/man-2877136_1280.jpg",
+        "description": "Photo of a person with no face.",
+        "source": "https://cdn.pixabay.com/photo/2017/10/22/09/03/man-2877136_1280.jpg"
+      }
+    ],
+    "chance": 0.0015,
+    "references": [
+      {
+        "name": "Postpartum Depression Statistics",
+        "authors": [],
+        "url": "https://www.postpartumdepression.org/resources/statistics/"
+      }
+    ],
+    "consecutiveOutcomes": []
   }
 ]
