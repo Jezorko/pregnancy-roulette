@@ -1,6 +1,6 @@
 package components
 
-import jezorko.github.pregnancyroulette.PregnancyRisk
+import jezorko.github.pregnancyroulette.PregnancyOutcome
 import react.FC
 import react.Props
 import react.dom.html.ReactHTML.a
@@ -8,14 +8,14 @@ import react.dom.html.ReactHTML.br
 import react.dom.html.ReactHTML.div
 import react.dom.html.ReactHTML.img
 
-external interface PregnancyRiskCardProps : Props {
+external interface PregnancyOutcomeCardProps : Props {
     var position: Int
-    var pregnancyRisk: PregnancyRisk
+    var pregnancyOutcome: PregnancyOutcome
 }
 
-val PregnancyRiskCard = FC<PregnancyRiskCardProps> { props ->
-    val pregnancyRisk = props.pregnancyRisk
-    val prefix = "pregnancy-risk-card"
+val PregnancyOutcomeCard = FC<PregnancyOutcomeCardProps> { props ->
+    val pregnancyOutcome = props.pregnancyOutcome
+    val prefix = "pregnancy-outcome-card"
     div {
         id = "$prefix-${props.position}"
         className = prefix
@@ -26,7 +26,7 @@ val PregnancyRiskCard = FC<PregnancyRiskCardProps> { props ->
             div {
                 id = "$prefix-${props.position}-front"
                 className = "$prefix-front"
-                pregnancyRisk.images.firstOrNull()?.let { image ->
+                pregnancyOutcome.images.firstOrNull()?.let { image ->
                     img {
                         id = "$prefix-${props.position}-image"
                         className = "$prefix-image"
@@ -47,19 +47,19 @@ val PregnancyRiskCard = FC<PregnancyRiskCardProps> { props ->
                 div {
                     id = "$prefix-${props.position}-title"
                     className = "$prefix-title"
-                    +pregnancyRisk.name
+                    +pregnancyOutcome.name
                 }
                 div {
                     id = "$prefix-${props.position}-description"
                     className = "$prefix-description"
-                    +pregnancyRisk.description
+                    +pregnancyOutcome.description
                 }
-                if (pregnancyRisk.references.isNotEmpty()) {
+                if (pregnancyOutcome.references.isNotEmpty()) {
                     div {
                         id = "$prefix-${props.position}-references"
                         className = "$prefix-references"
                         +"References: "
-                        pregnancyRisk.references.forEachIndexed { index, reference ->
+                        pregnancyOutcome.references.forEachIndexed { index, reference ->
                             br {}
                             a {
                                 id = "$prefix-${props.position}-reference-$index"

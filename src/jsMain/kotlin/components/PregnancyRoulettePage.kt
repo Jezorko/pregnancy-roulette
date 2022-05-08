@@ -30,7 +30,7 @@ val PregnancyRoulettePage = FC<Props> { props ->
         WebsiteDescription {}
     } else {
         document.title = "${Constants.APPLICATION_TITLE} #$resultId"
-        RandomPregnancyRisksList {
+        RandomPregnancyOutcomesList {
             this.resultId = resultId
         }
     }

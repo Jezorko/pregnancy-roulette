@@ -1,6 +1,6 @@
 package api
 
-import jezorko.github.pregnancyroulette.PregnancyRisk
+import jezorko.github.pregnancyroulette.PregnancyOutcome
 import jezorko.github.pregnancyroulette.Routes
 import jezorko.github.pregnancyroulette.VersionInfo
 import kotlinx.browser.window
@@ -29,8 +29,8 @@ object ApiClient {
         }
     }
 
-    fun getAllRisks(): Promise<List<PregnancyRisk>> = window.fetch(
-        Routes.PregnancyRisksRoute.path,
+    fun getAllOutcomes(): Promise<List<PregnancyOutcome>> = window.fetch(
+        Routes.PregnancyOutcomesRoute.path,
         object : RequestInit {}.apply {
             method = "GET"
         }
@@ -39,7 +39,7 @@ object ApiClient {
             200 -> response.text()
                 .then { responseBodyAsText -> json.decodeFromString(responseBodyAsText) }
             else -> Promise.reject(
-                IllegalStateException("cannot resolve pregnancy risks, received HTTP ${response.status}")
+                IllegalStateException("cannot resolve pregnancy outcomes, received HTTP ${response.status}")
             )
         }
     }

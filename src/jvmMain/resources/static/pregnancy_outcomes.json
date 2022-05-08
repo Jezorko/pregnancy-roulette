@@ -31,7 +31,7 @@
         "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5013086/"
       }
     ],
-    "consecutiveRisks": []
+    "consecutiveOutcomes": []
   },
   {
     "name": "Perineal Lacerations",
@@ -74,7 +74,7 @@
         "url": "https://www.uptodate.com/contents/repair-of-perineal-and-other-lacerations-associated-with-childbirth"
       }
     ],
-    "consecutiveRisks": [
+    "consecutiveOutcomes": [
       {
         "name": "Clitoral Tearing",
         "commonNames": [],
@@ -103,7 +103,7 @@
             "url": "https://www.todaysparent.com/pregnancy/giving-birth/i-tore-my-clitoris-giving-birth/"
           }
         ],
-        "consecutiveRisks": []
+        "consecutiveOutcomes": []
       }
     ]
   },
@@ -131,7 +131,7 @@
         "url": "https://rarediseases.org/rare-diseases/ichthyosis-harlequin-type/"
       }
     ],
-    "consecutiveRisks": []
+    "consecutiveOutcomes": []
   },
   {
     "name": "Miscarriage",
@@ -157,7 +157,7 @@
         "url": "https://www.healthline.com/health/pregnancy/miscarriage-rates-by-week"
       }
     ],
-    "consecutiveRisks": []
+    "consecutiveOutcomes": []
   },
   {
     "name": "Preeclampsia",
@@ -188,7 +188,7 @@
         "url": "https://www.mayoclinic.org/diseases-conditions/preeclampsia/symptoms-causes/syc-20355745"
       }
     ],
-    "consecutiveRisks": []
+    "consecutiveOutcomes": []
   },
   {
     "name": "Postpartum Hemorrhage",
@@ -221,6 +221,6 @@
         "url": "https://www.healthline.com/health/pregnancy/blood-clots-after-birth"
       }
     ],
-    "consecutiveRisks": []
+    "consecutiveOutcomes": []
   }
 ]

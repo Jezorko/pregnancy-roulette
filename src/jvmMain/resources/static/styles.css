@@ -18,14 +18,14 @@
     margin: 5% 10%;
 }
 
-#risks-detected-description {
+#outcomes-detected-description {
     left: 0;
     top: 35%;
     width: 80%;
     margin: 5% 10%;
 }
 
-#random-pregnancy-risks-list {
+#random-pregnancy-outcomes-list {
     left: 0;
     top: 45%;
     width: 100%;
@@ -33,20 +33,20 @@
     flex-wrap: wrap;
 }
 
-.random-pregnancy-risks-list-card-wrapper {
+.random-pregnancy-outcomes-list-card-wrapper {
     flex: 25%;
     max-width: 25%;
 }
 
 @media screen and (max-width: 800px) {
-    .random-pregnancy-risks-list-card-wrapper {
+    .random-pregnancy-outcomes-list-card-wrapper {
         flex: 50%;
         max-width: 50%;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .random-pregnancy-risks-list-card-wrapper {
+    .random-pregnancy-outcomes-list-card-wrapper {
         flex: 100%;
         max-width: 100%;
     }
@@ -57,7 +57,7 @@
     margin-bottom: 6%;
 }
 
-.pregnancy-risk-card {
+.pregnancy-outcome-card {
     vertical-align: middle;
     margin: 5% 10%;
     width: 80%;
@@ -66,7 +66,7 @@
     perspective: 1000px;
 }
 
-.pregnancy-risk-card-inner {
+.pregnancy-outcome-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
@@ -75,11 +75,11 @@
     transform-style: preserve-3d;
 }
 
-.pregnancy-risk-card:hover .pregnancy-risk-card-inner {
+.pregnancy-outcome-card:hover .pregnancy-outcome-card-inner {
     transform: rotateY(180deg);
 }
 
-.pregnancy-risk-card-front, .pregnancy-risk-card-back {
+.pregnancy-outcome-card-front, .pregnancy-outcome-card-back {
     border-radius: 10px;
     position: absolute;
     width: 100%;
@@ -88,29 +88,29 @@
     backface-visibility: hidden;
 }
 
-.pregnancy-risk-card-front {
+.pregnancy-outcome-card-front {
     background-color: gray;
 }
 
-.pregnancy-risk-card-back {
+.pregnancy-outcome-card-back {
     background-color: #9098a1;
     transform: rotateY(180deg);
 }
 
-.pregnancy-risk-card-image {
+.pregnancy-outcome-card-image {
     border-radius: 10px;
     max-width: 100%;
     max-height: 100%;
 }
 
-.pregnancy-risk-card-image-source {
+.pregnancy-outcome-card-image-source {
     bottom: 0;
     left: 0;
     text-align: center;
     font-size: 0.2em;
 }
 
-.pregnancy-risk-card-title {
+.pregnancy-outcome-card-title {
     color: black;
     font-weight: bold;
     margin-top: 5%;
@@ -119,7 +119,7 @@
     margin-right: 5%;
 }
 
-.pregnancy-risk-card-description {
+.pregnancy-outcome-card-description {
     color: black;
     font-size: 0.75em;
     margin-top: 5%;
@@ -127,7 +127,7 @@
     margin-right: 5%;
 }
 
-.pregnancy-risk-card-references {
+.pregnancy-outcome-card-references {
     color: black;
     text-align: left;
     font-size: 0.75em;
@@ -137,7 +137,7 @@
     margin-right: 5%;
 }
 
-.pregnancy-risk-card-reference {
+.pregnancy-outcome-card-reference {
     font-size: 0.2em;
 }
 
