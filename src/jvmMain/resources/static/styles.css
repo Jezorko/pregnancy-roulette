@@ -29,6 +29,27 @@
     left: 0;
     top: 45%;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.random-pregnancy-risks-list-card-wrapper {
+    flex: 25%;
+    max-width: 25%;
+}
+
+@media screen and (max-width: 800px) {
+    .random-pregnancy-risks-list-card-wrapper {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .random-pregnancy-risks-list-card-wrapper {
+        flex: 100%;
+        max-width: 100%;
+    }
 }
 
 #website-disclaimer {
@@ -37,7 +58,7 @@
 }
 
 .pregnancy-risk-card {
-    position: relative;
+    vertical-align: middle;
     margin: 5% 10%;
     width: 80%;
     height: 250px;

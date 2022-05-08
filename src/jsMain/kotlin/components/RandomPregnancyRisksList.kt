@@ -42,14 +42,18 @@ val RandomPregnancyRisksList = FC<RandomPregnancyRisksListProps> { props ->
         RisksDetectedDescription { numberOfRisks = risks.size }
     }
 
+    val idPrefix = "random-pregnancy-risks-list"
     div {
-        id = "random-pregnancy-risks-list"
+        id = idPrefix
         risks.forEachIndexed { index, risk ->
-            PregnancyRiskCard {
-                position = index
-                pregnancyRisk = risk
+            div {
+                id = "$idPrefix-card-$index-wrapper"
+                className = "$idPrefix-card-wrapper"
+                PregnancyRiskCard {
+                    position = index
+                    pregnancyRisk = risk
+                }
             }
         }
     }
-
 }
