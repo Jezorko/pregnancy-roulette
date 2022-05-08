@@ -479,5 +479,34 @@
       }
     ],
     "consecutiveOutcomes": []
+  },
+  {
+    "name": "Weight Gain",
+    "commonNames": [],
+    "description": "On average, pregnant people gain 14.5 kg during pregnancy. 75% stay heavier post-pregnancy, including 47% who retain more than 4.5kg.",
+    "isNegative": true,
+    "tags": {
+      "own": [
+        "postpartum-mother"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/px950856-image-kwvx90og.jpg?w=1200&h=1200&dpr=1&fit=clip&crop=default&fm=jpg&q=75&vib=3&con=3&usm=15&cs=srgb&bg=F4F4F3&ixlib=js-2.2.1&s=1a1ed85045b208a5e85021ab1aeea61e",
+        "description": "Photo of a person standing on scales.",
+        "source": "https://www.rawpixel.com/search/weight%20scale?page=1&sort=curated"
+      }
+    ],
+    "chance": 0.75,
+    "references": [
+      {
+        "name": "Many Women Don't Lose Those Pregnancy Pounds",
+        "authors": [
+          "WebMD"
+        ],
+        "url": "https://www.webmd.com/baby/news/20141209/many-women-dont-lose-those-pregnancy-pounds-study-finds"
+      }
+    ],
+    "consecutiveOutcomes": []
   }
 ]
