@@ -4,8 +4,9 @@ import kotlinx.serialization.Serializable
 
 val healthyBaby = PregnancyOutcome(
     name = "Congratulations!",
-    description = "You were lucky enough to birth a healthy baby and have no side effects, but remember that this list is not exhaustive.",
+    description = "You were lucky enough to birth a healthy baby and have no negative outcomes, but remember that this list is not exhaustive.",
     commonNames = emptyList(),
+    isNegative = false,
     tags = Tags(),
     images = listOf(
         PregnancyOutcomeImage(
@@ -30,6 +31,7 @@ data class PregnancyOutcome(
     val name: String,
     val commonNames: List<String>,
     val description: String,
+    val isNegative: Boolean,
     val tags: Tags,
     val images: List<PregnancyOutcomeImage>,
     val chance: Double,

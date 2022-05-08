@@ -5,6 +5,7 @@
       "Mother's Apron"
     ],
     "description": "\"Mother's Apron\" is a common condition, defined as a separation of the 2 muscle bellies of rectus abdominis. It may persist for months or years postpartum and may require a surgery to be fixed.",
+    "isNegative": true,
     "tags": {
       "own": [
         "postpartum"
@@ -39,6 +40,7 @@
       "Vaginal Tearing"
     ],
     "description": "Vaginal Tearing is a laceration of the skin and other soft tissue structures separating the vagina from the anus. The condition varies widely in severity and 60-80% of affected persons will recover after 12 months, but it may result in permanent damage.",
+    "isNegative": true,
     "tags": {
       "own": [
         "postpartum"
@@ -79,6 +81,7 @@
         "name": "Clitoral Tearing",
         "commonNames": [],
         "description": "A more severe case of Perineal Lacerations resulting in a torn clitoral hood. Yes, it's as bad as it sounds.",
+        "isNegative": true,
         "tags": {
           "own": [
             "postpartum"
@@ -111,6 +114,7 @@
     "name": "Harlequin Ichthyosis",
     "commonNames": [],
     "description": "Severe genetic disorder that affects the infant's skin.",
+    "isNegative": true,
     "tags": {
       "own": [
         "postpartum"
@@ -137,6 +141,7 @@
     "name": "Miscarriage",
     "commonNames": [],
     "description": "An early loss of a pregnancy, which usually happens in the first trimester. Between 10 and 15 percent of known pregnancies end this way.",
+    "isNegative": true,
     "tags": {
       "excludes": [
         "postpartum"
@@ -163,6 +168,7 @@
     "name": "Preeclampsia",
     "commonNames": [],
     "description": "Complication of pregnancy which can cause high blood pressure and kidney or other organ damage. If left untreated, it can lead to serious or fatal complications.",
+    "isNegative": true,
     "tags": {
       "own": [
         "postpartum"
@@ -194,6 +200,7 @@
     "name": "Postpartum Hemorrhage",
     "commonNames": [],
     "description": "Potentially dangerous blood clots that may travel to lungs. Causes approx. 8% of maternal deaths in developed countries.",
+    "isNegative": true,
     "tags": {
       "own": [
         "postpartum"

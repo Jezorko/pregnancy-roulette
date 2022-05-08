@@ -45,7 +45,7 @@ val RandomPregnancyOutcomesList = FC<RandomPregnancyOutcomesListProps> { props -
     }
 
     if (outcomes.isNotEmpty() && outcomes.first() != healthyBaby) {
-        OutcomeDetectedDescription { numberOfOutcomes = outcomes.size }
+        OutcomeDetectedDescription { numberOfNegativeOutcomes = outcomes.filter { it.isNegative }.size }
     }
 
     val idPrefix = "random-pregnancy-outcomes-list"
