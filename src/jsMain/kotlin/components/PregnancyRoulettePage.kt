@@ -11,10 +11,14 @@ import kotlin.random.Random
 
 const val resultIdParam = "resultId"
 
-val PregnancyRoulettePage = FC<Props> { props ->
+val PregnancyRoulettePage = FC<Props> {
     val urlParams = URLSearchParams(window.location.search)
 
     var resultId: Int? by useState(urlParams.get(resultIdParam)?.toIntOrNull())
+
+    if (resultId != null) {
+        Confetti { this.resultId = resultId }
+    }
 
     GetPregnantButton {
         onClick = {
