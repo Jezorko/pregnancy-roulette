@@ -514,7 +514,7 @@
     "commonNames": [
       "Vaginal Yeast Infection"
     ],
-    "description": "Symptoms include: itching or soreness, pain during sexual intercourse, pain or discomfort when urinating and abnormal vaginal discharge.",
+    "description": "Yeast Infection. Symptoms include: itching or soreness, pain during sexual intercourse, pain or discomfort when urinating and abnormal vaginal discharge.",
     "isNegative": true,
     "tags": {
       "own": [
@@ -544,6 +544,42 @@
           "CDC"
         ],
         "url": "https://www.cdc.gov/fungal/diseases/candidiasis/genital/index.html"
+      }
+    ],
+    "consecutiveOutcomes": []
+  },
+  {
+    "name": "Hemorrhoids",
+    "commonNames": [],
+    "description": "A painful swelling of a vein in the rectum.",
+    "isNegative": true,
+    "tags": {
+      "own": [
+        "postpartum-mother"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Hemorrhoids.jpg?20081103182737",
+        "description": "Photo of Hemorrhoids.",
+        "source": "https://commons.wikimedia.org/wiki/File:Hemorrhoids.jpg"
+      }
+    ],
+    "chance": 0.4,
+    "references": [
+      {
+        "name": "Perianal Diseases in Pregnancy and After Childbirth: Frequency, Risk Factors, Impact on Women's Quality of Life and Treatment Methods",
+        "authors": [
+          "Diana Bužinskienė",
+          "Živilė Sabonytė-Balšaitienė",
+          "Tomas Poškus"
+        ],
+        "url": "https://www.frontiersin.org/articles/10.3389/fsurg.2022.788823/full"
+      },
+      {
+        "name": "Common Conditions",
+        "authors": [],
+        "url": "https://www.urmc.rochester.edu/ob-gyn/obstetrics/after-delivery/common-conditions.aspx"
       }
     ],
     "consecutiveOutcomes": []
