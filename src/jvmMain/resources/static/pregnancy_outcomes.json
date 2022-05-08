@@ -616,7 +616,7 @@
   {
     "name": "Stretch Marks",
     "commonNames": [],
-    "description": "indented streaks that appear on the abdomen, breasts, hips, buttocks or other places on the body.",
+    "description": "Indented streaks that appear on the abdomen, breasts, hips, buttocks or other places on the body.",
     "isNegative": true,
     "tags": {
       "own": [
@@ -643,6 +643,35 @@
         "name": "What Are the Best Ways to Remove or Fade Stretch Marks Post-Pregnancy?",
         "authors": [],
         "url": "https://www.healthline.com/health/pregnancy/stretch-marks-after-pregnancy#causes"
+      }
+    ],
+    "consecutiveOutcomes": []
+  },
+  {
+    "name": "Telogen Effluvium",
+    "commonNames": [
+      "Hair Loss"
+    ],
+    "description": "The most common period of hair loss occurs approximately three months after delivery. The rise in hormones during pregnancy keeps you from losing your hair. The normal hair loss that was delayed during pregnancy may fall out all at once.",
+    "isNegative": true,
+    "tags": {
+      "own": [
+        "postpartum-mother"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://americanpregnancy.org/wp-content/uploads/2012/04/enpregnancy-and-hair-lossesel-embarazo-y-la-p%C3%A9rdida-del-cabello.jpg",
+        "description": "Photo of hair on a hairbrush.",
+        "source": "https://americanpregnancy.org/healthy-pregnancy/pregnancy-health-wellness/hair-loss-during-pregnancy/"
+      }
+    ],
+    "chance": 0.45,
+    "references": [
+      {
+        "name": "Pregnancy and Hair Loss",
+        "authors": [],
+        "url": "https://americanpregnancy.org/healthy-pregnancy/pregnancy-health-wellness/hair-loss-during-pregnancy/"
       }
     ],
     "consecutiveOutcomes": []
