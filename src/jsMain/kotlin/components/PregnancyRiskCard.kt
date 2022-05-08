@@ -6,7 +6,6 @@ import react.Props
 import react.dom.html.ReactHTML.a
 import react.dom.html.ReactHTML.br
 import react.dom.html.ReactHTML.div
-import react.dom.html.ReactHTML.img
 
 external interface PregnancyRiskCardProps : Props {
     var position: Int
@@ -19,59 +18,36 @@ val PregnancyRiskCard = FC<PregnancyRiskCardProps> { props ->
     div {
         id = "$prefix-${props.position}"
         className = prefix
+
+        ImageGallery {
+            position = props.position
+            images = props.pregnancyRisk.images
+        }
         div {
-            id = "$prefix-${props.position}-inner"
-            className = "$prefix-inner"
-
+            id = "$prefix-${props.position}-title"
+            className = "$prefix-title"
+            +pregnancyRisk.name
+        }
+        div {
+            id = "$prefix-${props.position}-description"
+            className = "$prefix-description"
+            +pregnancyRisk.description
+        }
+        if (pregnancyRisk.references.isNotEmpty()) {
             div {
-                id = "$prefix-${props.position}-front"
-                className = "$prefix-front"
-                pregnancyRisk.images.firstOrNull()?.let { image ->
-                    img {
-                        id = "$prefix-${props.position}-image"
-                        className = "$prefix-image"
-                        src = image.url
-                        alt = image.description
-                    }
-                    div {
-                        id = "$prefix-${props.position}-image-source"
-                        className = "$prefix-image-source"
-                        +"Source: ${image.source}"
+                id = "$prefix-${props.position}-references"
+                className = "$prefix-references"
+                +"References: "
+                pregnancyRisk.references.forEachIndexed { index, reference ->
+                    br {}
+                    a {
+                        id = "$prefix-${props.position}-reference-$index"
+                        className = "$prefix-reference"
+                        +"[${index + 1}] $reference"
+                        href = reference.url
                     }
                 }
             }
-
-            div {
-                id = "$prefix-${props.position}-back"
-                className = "$prefix-back"
-                div {
-                    id = "$prefix-${props.position}-title"
-                    className = "$prefix-title"
-                    +pregnancyRisk.name
-                }
-                div {
-                    id = "$prefix-${props.position}-description"
-                    className = "$prefix-description"
-                    +pregnancyRisk.description
-                }
-                if (pregnancyRisk.references.isNotEmpty()) {
-                    div {
-                        id = "$prefix-${props.position}-references"
-                        className = "$prefix-references"
-                        +"References: "
-                        pregnancyRisk.references.forEachIndexed { index, reference ->
-                            br {}
-                            a {
-                                id = "$prefix-${props.position}-reference-$index"
-                                className = "$prefix-reference"
-                                +"[${index + 1}] $reference"
-                                href = reference.url
-                            }
-                        }
-                    }
-                }
-            }
-
         }
     }
 }
