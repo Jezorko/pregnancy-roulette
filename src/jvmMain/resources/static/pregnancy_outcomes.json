@@ -450,5 +450,34 @@
       }
     ],
     "consecutiveOutcomes": []
+  },
+  {
+    "name": "Gestational Diabetes",
+    "commonNames": [],
+    "description": "Increases risk of developing type 2 diabetes later in life. Caused by too much glucode (sugar) in blood. Increases the risk of having a large baby.",
+    "isNegative": true,
+    "tags": {
+      "own": [
+        "postpartum-mother"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://cdn.pixabay.com/photo/2014/11/12/19/25/diabetes-528678_1280.jpg",
+        "description": "Photo blood sugar measuring equipment.",
+        "source": "https://pixabay.com/es/photos/diabetes-az%C3%BAcar-en-la-sangre-528678/"
+      }
+    ],
+    "chance": 0.075,
+    "references": [
+      {
+        "name": "Diabetes During Pregnancy",
+        "authors": [
+          "CDC"
+        ],
+        "url": "https://www.cdc.gov/reproductivehealth/maternalinfanthealth/diabetes-during-pregnancy.htm"
+      }
+    ],
+    "consecutiveOutcomes": []
   }
 ]
