@@ -764,5 +764,32 @@
       }
     ],
     "consecutiveOutcomes": []
+  },
+  {
+    "name": "Anemia",
+    "commonNames": [],
+    "description": "A lack enough healthy red blood cells to carry adequate oxygen to your body's tissues. Potentially life-threatening.",
+    "isNegative": true,
+    "tags": {
+      "own": [
+        "postpartum-mother"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Anemia.JPG",
+        "description": "Photo of a hand of a person with anemia.",
+        "source": "https://commons.wikimedia.org/wiki/File:Anemia.JPG"
+      }
+    ],
+    "chance": 0.365,
+    "references": [
+      {
+        "name": "Anaemia in women and children",
+        "authors": [],
+        "url": "https://www.who.int/data/gho/data/themes/topics/anaemia_in_women_and_children"
+      }
+    ],
+    "consecutiveOutcomes": []
   }
 ]
