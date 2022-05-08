@@ -791,5 +791,34 @@
       }
     ],
     "consecutiveOutcomes": []
+  },
+  {
+    "name": "Financial Issues",
+    "commonNames": [],
+    "description": "Pregnancy is expensive. Over a five-year period, 24% of pregnant and postpartum women in one study reported unmet health care needs due to cost.",
+    "isNegative": true,
+    "tags": {
+      "own": [
+        "postpartum-mother"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://labblog.uofmhealth.org/sites/lab/files/2021-12/Worried-Mother-Baby-Bills-Blue.jpg",
+        "description": "Image of a mother with child surrounded by unpaid bills.",
+        "source": "https://labblog.uofmhealth.org/rounds/study-financial-hardship-prevalent-during-and-after-pregnancy"
+      }
+    ],
+    "chance": 0.24,
+    "references": [
+      {
+        "name": "Study: Financial hardship prevalent during and after pregnancy",
+        "authors": [
+          "Beata Mostafavi"
+        ],
+        "url": "https://labblog.uofmhealth.org/rounds/study-financial-hardship-prevalent-during-and-after-pregnancy"
+      }
+    ],
+    "consecutiveOutcomes": []
   }
 ]
