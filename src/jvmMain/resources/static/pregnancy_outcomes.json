@@ -675,5 +675,67 @@
       }
     ],
     "consecutiveOutcomes": []
+  },
+  {
+    "name": "Twins",
+    "commonNames": [],
+    "description": "Chance of having twins depends on genetics, but on average 1 in 250 pregnancies are twins.",
+    "isNegative": true,
+    "tags": {
+      "own": [
+        "postpartum-child",
+        "multiple-children"
+      ],
+      "excludes": [
+        "multiple-children"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://www.thetech.org/sites/default/files/resize/remote/75e53796ad5530a892d85eedaf32a88a-300x298.jpg",
+        "description": "Photo of twins.",
+        "source": "https://www.thetech.org/ask-a-geneticist/what-are-my-chances-having-twins"
+      }
+    ],
+    "chance": 0.004,
+    "references": [
+      {
+        "name": "What are my chances of having twins?",
+        "authors": [],
+        "url": "https://www.thetech.org/ask-a-geneticist/what-are-my-chances-having-twins"
+      }
+    ],
+    "consecutiveOutcomes": []
+  },
+  {
+    "name": "Triplets",
+    "commonNames": [],
+    "description": "Having triples increases chances of other complications during pregnancy.",
+    "isNegative": true,
+    "tags": {
+      "own": [
+        "postpartum-child",
+        "multiple-children"
+      ],
+      "excludes": [
+        "multiple-children"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://live.staticflickr.com/3365/3310687215_7f7e03fbaa_z.jpg",
+        "description": "Photo of triplets.",
+        "source": "https://www.flickr.com/photos/miriambjdolls/3310687215"
+      }
+    ],
+    "chance": 0.0001,
+    "references": [
+      {
+        "name": "Multiple Pregnancy and Birth: Twins, Triplets, and High Order Multiples (booklet)",
+        "authors": [],
+        "url": "https://www.reproductivefacts.org/news-and-publications/patient-fact-sheets-and-booklets/documents/fact-sheets-and-info-booklets/multiple-pregnancy-and-birth-twins-triplets-and-high-order-multiples-booklet/"
+      }
+    ],
+    "consecutiveOutcomes": []
   }
 ]
