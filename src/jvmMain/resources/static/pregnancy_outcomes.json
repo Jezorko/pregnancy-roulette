@@ -737,5 +737,32 @@
       }
     ],
     "consecutiveOutcomes": []
+  },
+  {
+    "name": "Shaken Baby Syndrome",
+    "commonNames": [],
+    "description": "A serious brain injury resulting from forcefully shaking an infant or toddler, often resulting from stress post pregnancy.",
+    "isNegative": true,
+    "tags": {
+      "own": [
+        "postpartum-child"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://p.potaufeu.asahi.com/83f0-p/picture/20017150/c3d43f20ec1d27c5ecaac507db4a6941.jpg",
+        "description": "Image of a baby being shaken.",
+        "source": "https://www.asahi.com/ajw/articles/13112172"
+      }
+    ],
+    "chance": 0.00033,
+    "references": [
+      {
+        "name": "Trends in shaken baby syndrome diagnosis codes among young children hospitalized for abuse",
+        "authors": [],
+        "url": "https://injepijournal.biomedcentral.com/articles/10.1186/s40621-021-00334-w"
+      }
+    ],
+    "consecutiveOutcomes": []
   }
 ]
