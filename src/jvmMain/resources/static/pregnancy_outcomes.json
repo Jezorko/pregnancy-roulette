@@ -820,5 +820,34 @@
       }
     ],
     "consecutiveOutcomes": []
+  },
+  {
+    "name": "Domestic Violence",
+    "commonNames": [],
+    "description": "Nearly 20% of women experience violence during pregnancy, with pregnant adolescents and women with unintended pregnancies at an increased risk.",
+    "isNegative": true,
+    "tags": {
+      "own": [
+        "during-pregnancy-mother"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://live.staticflickr.com/2637/4135410159_77cef90512_z.jpg",
+        "description": "Image of a person covering their face.",
+        "source": "https://www.flickr.com/photos/european_parliament/4135410159"
+      }
+    ],
+    "chance": 0.2,
+    "references": [
+      {
+        "name": "Fact Sheet: Domestic Violence and Pregnancy",
+        "authors": [
+          "National Coalition Against Domestic Violence (NCADV)"
+        ],
+        "url": "https://vawnet.org/material/fact-sheet-domestic-violence-and-pregnancy"
+      }
+    ],
+    "consecutiveOutcomes": []
   }
 ]
