@@ -612,5 +612,39 @@
       }
     ],
     "consecutiveOutcomes": []
+  },
+  {
+    "name": "Stretch Marks",
+    "commonNames": [],
+    "description": "indented streaks that appear on the abdomen, breasts, hips, buttocks or other places on the body.",
+    "isNegative": true,
+    "tags": {
+      "own": [
+        "during-pregnancy-mother"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://live.staticflickr.com/15/19004951_9f98680301_w.jpg",
+        "description": "Photo of stretch marks.",
+        "source": "https://www.flickr.com/photos/barelyfitz/19004951"
+      }
+    ],
+    "chance": 0.9,
+    "references": [
+      {
+        "name": "Stretch marks",
+        "authors": [
+          "Mayo Clinic"
+        ],
+        "url": "https://www.mayoclinic.org/diseases-conditions/stretch-marks/symptoms-causes/syc-20351139"
+      },
+      {
+        "name": "What Are the Best Ways to Remove or Fade Stretch Marks Post-Pregnancy?",
+        "authors": [],
+        "url": "https://www.healthline.com/health/pregnancy/stretch-marks-after-pregnancy#causes"
+      }
+    ],
+    "consecutiveOutcomes": []
   }
 ]
