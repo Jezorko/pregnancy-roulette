@@ -1,5 +1,6 @@
 package jezorko.github.pregnancyroulette
 
+import com.fasterxml.jackson.core.type.TypeReference
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.module.kotlin.registerKotlinModule
 import io.ktor.application.*
@@ -18,3 +19,8 @@ suspend fun <T> ApplicationCall.respondJson(
         provider = { objectMapper.writeValueAsString(provider()) }
     )
 }
+
+fun <T : Any> deserializeJsonResource(path: String, resultType: TypeReference<T>) = objectMapper.readValue(
+    Thread.currentThread().contextClassLoader.getResourceAsStream(path),
+    resultType
+)

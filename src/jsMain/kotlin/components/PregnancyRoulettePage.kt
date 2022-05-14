@@ -2,6 +2,7 @@ package components
 
 import jezorko.github.pregnancyroulette.Constants
 import jezorko.github.pregnancyroulette.PregnancyOutcome
+import jezorko.github.pregnancyroulette.outcomesParamName
 import kotlinx.browser.document
 import kotlinx.browser.window
 import org.w3c.dom.url.URLSearchParams
@@ -10,8 +11,6 @@ import react.Props
 import react.useState
 import shared.outcomesSerializerPromise
 import shared.randomOutcomes
-
-const val outcomesParamName = "outcomes"
 
 val PregnancyRoulettePage = FC<Props> {
     val urlParams = URLSearchParams(window.location.search)

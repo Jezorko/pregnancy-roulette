@@ -12,3 +12,5 @@ object Routes {
     object PregnancyOutcomesRoute : Route0("/static/pregnancy_outcomes.json")
 
 }
+
+const val outcomesParamName = "outcomes"

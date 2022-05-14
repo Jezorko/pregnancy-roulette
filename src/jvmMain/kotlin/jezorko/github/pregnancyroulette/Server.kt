@@ -9,7 +9,7 @@ import io.ktor.server.engine.*
 import io.ktor.server.netty.*
 import kotlinx.html.*
 
-fun HTML.index() {
+fun HTML.index(outcomes: List<PregnancyOutcome>?) {
     head {
         title(Constants.APPLICATION_TITLE)
         link { rel = "stylesheet"; href = "static/styles.css" }
@@ -25,7 +25,7 @@ fun HTML.index() {
         }
         meta {
             name = "description"
-            content = Constants.APPLICATION_DESCRIPTION
+            content = Constants.applicationDescription(outcomes)
         }
         meta {
             attributes["property"] = "og:url"
@@ -33,7 +33,7 @@ fun HTML.index() {
         }
         meta {
             attributes["property"] = "og:description"
-            content = Constants.APPLICATION_DESCRIPTION
+            content = Constants.applicationDescription(outcomes)
         }
         meta {
             attributes["property"] = "og:image"
@@ -61,7 +61,12 @@ fun main() {
     embeddedServer(Netty, port = Configuration.PORT.value) {
         routing {
             get("/") {
-                call.respondHtml(HttpStatusCode.OK, HTML::index)
+                call.respondHtml(HttpStatusCode.OK) {
+                    index(
+                        context.request.queryParameters[outcomesParamName]
+                            ?.let(outcomesSerializer::deserializeOutcomes)
+                    )
+                }
             }
             static("/") {
                 resource(resource = "/static/favicon.ico", remotePath = "favicon.ico")
