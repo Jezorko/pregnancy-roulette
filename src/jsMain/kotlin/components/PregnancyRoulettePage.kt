@@ -57,9 +57,9 @@ val PregnancyRoulettePage = FC<Props> {
         PregnancyOutcomesList {
             this.outcomes = currentOutcomes
         }
-
-        SocialMediaShareButtons { outcomes = currentOutcomes }
     }
+
+    SocialMediaShareButtons { outcomes = currentOutcomes }
 
     WebsiteDisclaimer {}
 
