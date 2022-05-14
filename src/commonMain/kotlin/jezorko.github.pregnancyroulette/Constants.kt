@@ -9,8 +9,16 @@ object Constants {
             "My simulated pregnancy was a full success!" +
                     " Spin the wheel and see how lucky YOU are!"
         else
-            "My simulated pregnancy ended up with ${outcomes.filter { it.isNegative }.size} negative" +
-                    " and ${outcomes.filter { !it.isNegative }.size} positive outcomes!" +
+            "My simulated pregnancy ended up with ${
+                outcomes.filter { !it.isNegative }.size.let { negativeOutcomesCount ->
+                    val positiveOutcomesCount = outcomes.size - negativeOutcomesCount
+                    ((if (positiveOutcomesCount == 0) emptyList()
+                    else listOf("$positiveOutcomesCount positive")) +
+                            (if (negativeOutcomesCount == 0) emptyList()
+                            else listOf("$negativeOutcomesCount negative"))
+                            ).joinToString(" and ")
+                }
+            } outcomes!" +
                     " Spin the wheel and see how many you can get!"
 
 }
