@@ -2,7 +2,6 @@ package shared
 
 import api.ApiClient
 import jezorko.github.pregnancyroulette.PregnancyOutcome
-import jezorko.github.pregnancyroulette.healthyBaby
 import kotlin.js.Promise
 import kotlin.random.Random
 
@@ -24,5 +23,5 @@ fun randomOutcomes(outcomes: List<PregnancyOutcome>): List<PregnancyOutcome> {
                     outcome == currentOutcome || outcome.tags.own.none(currentOutcome.tags.excludes::contains)
                 }
             }
-        }.ifEmpty { listOf(healthyBaby) }
+        }
 }

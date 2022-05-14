@@ -1,7 +1,6 @@
 package components
 
 import jezorko.github.pregnancyroulette.PregnancyOutcome
-import jezorko.github.pregnancyroulette.healthyBaby
 import react.FC
 import react.Props
 import react.dom.html.ReactHTML.div
@@ -13,10 +12,6 @@ external interface RandomPregnancyOutcomesListProps : Props {
 val RandomPregnancyOutcomesList = FC<RandomPregnancyOutcomesListProps> { props ->
 
     val outcomes = props.outcomes
-
-    if (outcomes.isNotEmpty() && outcomes.first() != healthyBaby) {
-        OutcomeDetectedDescription { numberOfNegativeOutcomes = outcomes.filter { it.isNegative }.size }
-    }
 
     val idPrefix = "random-pregnancy-outcomes-list"
     div {

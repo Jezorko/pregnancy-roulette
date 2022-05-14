@@ -47,6 +47,13 @@ val PregnancyRoulettePage = FC<Props> {
         WebsiteDescription {}
     } else {
         document.title = "${Constants.APPLICATION_TITLE} (${currentOutcomes.size} outcomes)"
+        if (currentOutcomes.find { it.isNegative } != null) {
+            NegativeOutcomeDetectedDescription {
+                numberOfNegativeOutcomes = currentOutcomes.filter { it.isNegative }.size
+            }
+        } else {
+            PositiveOutcomeDetectedDescription {}
+        }
         RandomPregnancyOutcomesList {
             this.outcomes = currentOutcomes
         }
