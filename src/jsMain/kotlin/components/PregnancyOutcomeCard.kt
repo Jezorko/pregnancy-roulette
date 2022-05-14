@@ -50,6 +50,11 @@ val PregnancyOutcomeCard = FC<PregnancyOutcomeCardProps> { props ->
                     +pregnancyOutcome.name
                 }
                 div {
+                    id = "$prefix-${props.position}-subtitle"
+                    className = "$prefix-subtitle"
+                    +"(${pregnancyOutcome.chance} chance)"
+                }
+                div {
                     id = "$prefix-${props.position}-description"
                     className = "$prefix-description"
                     +pregnancyOutcome.description

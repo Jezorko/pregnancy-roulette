@@ -7,7 +7,7 @@ import kotlin.random.Random
 
 private fun unfilteredRandomOutcomesFrom(outcomes: List<PregnancyOutcome>): List<PregnancyOutcome> {
     return outcomes.shuffled(Random)
-        .filter { outcome -> outcome.chance >= Random.nextDouble(0.0, 1.0) }
+        .filter { outcome -> outcome.parsedChance.test() }
         .flatMap { outcome ->
             listOf(outcome) + unfilteredRandomOutcomesFrom(outcome.consecutiveOutcomes)
         }

@@ -142,9 +142,18 @@
     color: black;
     font-weight: bold;
     margin-top: 5%;
-    height: 12%;
+    height: 3%;
     margin-left: 5%;
     margin-right: 5%;
+}
+
+.pregnancy-outcome-card-subtitle {
+    color: black;
+    font-weight: lighter;
+    font-style: italic;
+    height: 2%;
+    margin: 5% 5% 8%;
+    font-size: 0.5em;
 }
 
 .pregnancy-outcome-card-description {

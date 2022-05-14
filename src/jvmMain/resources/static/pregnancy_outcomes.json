@@ -18,7 +18,7 @@
         "source": "https://momababyetc.com/cause-of-mothers-apron-belly-after-pregnancy/"
       }
     ],
-    "chance": 0.6,
+    "chance": "60%",
     "references": [
       {
         "name": "Diastasis recti abdominis during pregnancy and 12 months after childbirth: prevalence, risk factors and report of lumbopelvic pain",
@@ -58,7 +58,7 @@
         "source": "https://medicoapps.org/perineal-lacerations-2/"
       }
     ],
-    "chance": 0.85,
+    "chance": "85%",
     "references": [
       {
         "name": "Perineal care",
@@ -88,7 +88,7 @@
           ]
         },
         "images": [],
-        "chance": 0.02,
+        "chance": "1 in 50",
         "references": [
           {
             "name": "Traumatic Periurethral Tear And Posterior Dislocation Of External Urinary Meatus",
@@ -127,7 +127,7 @@
         "source": "https://medical-junction.com/harlequin-ichthyosis/"
       }
     ],
-    "chance": 0.00000333,
+    "chance": "1 in 500000",
     "references": [
       {
         "name": "Harlequin Ichthyosis",
@@ -155,7 +155,7 @@
         "source": "https://www.istockphoto.com/es/fotos/miscarriage-baby"
       }
     ],
-    "chance": 0.125,
+    "chance": "25 in 200",
     "references": [
       {
         "name": "A Breakdown of Miscarriage Rates by Week",
@@ -182,7 +182,7 @@
         "source": "https://www.marchofdimes.org/"
       }
     ],
-    "chance": 0.05,
+    "chance": "5%",
     "references": [
       {
         "name": "Preeclampsia Foundation FAQ",
@@ -214,7 +214,7 @@
         "source": "https://www.veincenteratiowaheart.com/blog/everything-you-need-to-know-about-blood-clots/"
       }
     ],
-    "chance": 0.04,
+    "chance": "4%",
     "references": [
       {
         "name": "‘I thought I was going to die’: Ashley’s postpartum hemorrhage story",
@@ -248,7 +248,7 @@
         "source": "https://pxhere.com/en/photo/1606808"
       }
     ],
-    "chance": 0.000238,
+    "chance": "152 in 100000",
     "references": [
       {
         "name": "Historical Progress for Maternal Mortality (statistics for 2020)",
@@ -277,7 +277,7 @@
         "source": "https://en.wikiversity.org/wiki/File:Person-Young-Sad-Depressed-Depression-Sadness-505857.jpg"
       }
     ],
-    "chance": 0.15,
+    "chance": "15%",
     "references": [
       {
         "name": "Postpartum Depression Statistics",
@@ -310,7 +310,7 @@
             "source": "https://www.flickr.com/photos/30478819@N08/50017873121"
           }
         ],
-        "chance": 0.75,
+        "chance": "75%",
         "references": [
           {
             "name": "Postpartum Depression Statistics",
@@ -346,7 +346,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:OCD_-_Obsessive%E2%80%93compulsive_disorder.jpg"
       }
     ],
-    "chance": 0.04,
+    "chance": "4%",
     "references": [
       {
         "name": "Postpartum Depression Statistics",
@@ -380,7 +380,7 @@
         "source": "https://upload.wikimedia.org/wikipedia/commons/1/11/Panic_button.jpg"
       }
     ],
-    "chance": 0.07,
+    "chance": "7%",
     "references": [
       {
         "name": "Postpartum Depression Statistics",
@@ -407,7 +407,7 @@
         "source": "https://upload.wikimedia.org/wikipedia/commons/1/11/Panic_button.jpg"
       }
     ],
-    "chance": 0.1,
+    "chance": "10%",
     "references": [
       {
         "name": "Postpartum Depression Statistics",
@@ -441,7 +441,7 @@
         "source": "https://cdn.pixabay.com/photo/2017/10/22/09/03/man-2877136_1280.jpg"
       }
     ],
-    "chance": 0.0015,
+    "chance": "3 in 2000",
     "references": [
       {
         "name": "Postpartum Depression Statistics",
@@ -468,7 +468,7 @@
         "source": "https://pixabay.com/es/photos/diabetes-az%C3%BAcar-en-la-sangre-528678/"
       }
     ],
-    "chance": 0.075,
+    "chance": "7%",
     "references": [
       {
         "name": "Diabetes During Pregnancy",
@@ -497,7 +497,7 @@
         "source": "https://www.rawpixel.com/search/weight%20scale?page=1&sort=curated"
       }
     ],
-    "chance": 0.75,
+    "chance": "75%",
     "references": [
       {
         "name": "Many Women Don't Lose Those Pregnancy Pounds",
@@ -528,7 +528,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Candida_albicans_2.jpg"
       }
     ],
-    "chance": 0.1,
+    "chance": "10%",
     "references": [
       {
         "name": "PURLs: Yeast infection in pregnancy? Think twice about fluconazole",
@@ -565,7 +565,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Hemorrhoids.jpg"
       }
     ],
-    "chance": 0.4,
+    "chance": "40%",
     "references": [
       {
         "name": "Perianal Diseases in Pregnancy and After Childbirth: Frequency, Risk Factors, Impact on Women's Quality of Life and Treatment Methods",
@@ -603,7 +603,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Krvozuby.jpg"
       }
     ],
-    "chance": 0.6,
+    "chance": "60%",
     "references": [
       {
         "name": "Bleeding gums during pregnancy",
@@ -630,7 +630,7 @@
         "source": "https://www.flickr.com/photos/barelyfitz/19004951"
       }
     ],
-    "chance": 0.9,
+    "chance": "90%",
     "references": [
       {
         "name": "Stretch marks",
@@ -666,7 +666,7 @@
         "source": "https://americanpregnancy.org/healthy-pregnancy/pregnancy-health-wellness/hair-loss-during-pregnancy/"
       }
     ],
-    "chance": 0.45,
+    "chance": "45%",
     "references": [
       {
         "name": "Pregnancy and Hair Loss",
@@ -697,7 +697,7 @@
         "source": "https://www.thetech.org/ask-a-geneticist/what-are-my-chances-having-twins"
       }
     ],
-    "chance": 0.004,
+    "chance": "1 in 250",
     "references": [
       {
         "name": "What are my chances of having twins?",
@@ -728,12 +728,50 @@
         "source": "https://www.flickr.com/photos/miriambjdolls/3310687215"
       }
     ],
-    "chance": 0.0001,
+    "chance": "1 in 10000",
     "references": [
       {
         "name": "Multiple Pregnancy and Birth: Twins, Triplets, and High Order Multiples (booklet)",
         "authors": [],
         "url": "https://www.reproductivefacts.org/news-and-publications/patient-fact-sheets-and-booklets/documents/fact-sheets-and-info-booklets/multiple-pregnancy-and-birth-twins-triplets-and-high-order-multiples-booklet/"
+      }
+    ],
+    "consecutiveOutcomes": []
+  },
+  {
+    "name": "Quadruplets",
+    "commonNames": [],
+    "description": "You won a reverse lottery! In the US, the average cost of raising a child through the age of 17 is $233,610, so now your wallet is lighter by almost one million.",
+    "isNegative": true,
+    "tags": {
+      "own": [
+        "postpartum-child",
+        "multiple-children"
+      ],
+      "excludes": [
+        "multiple-children"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://instagram.fbcn7-3.fna.fbcdn.net/v/t51.2885-15/87224762_189864552359306_3072683953683081927_n.jpg?stp=dst-jpg_e35_s1080x1080&_nc_ht=instagram.fbcn7-3.fna.fbcdn.net&_nc_cat=102&_nc_ohc=iVHT0NYkNJUAX-iLVmt&edm=AABBvjUBAAAA&ccb=7-4&oh=00_AT-xGF2DgVmI7X_GHJxnKtj424C9eLt4RTQQHVnXu4taoA&oe=62864F49&_nc_sid=83d603",
+        "description": "Two photos, side by side: a person pregnant with quadruplets and the same person carrying them after they are born.",
+        "source": "https://www.instagram.com/p/B84QyhAnhsr"
+      }
+    ],
+    "chance": "1 in 700000",
+    "references": [
+      {
+        "name": "Multiple Pregnancy and Birth: Twins, Triplets, and High Order Multiples (booklet)",
+        "authors": [],
+        "url": "https://www.reproductivefacts.org/news-and-publications/patient-fact-sheets-and-booklets/documents/fact-sheets-and-info-booklets/multiple-pregnancy-and-birth-twins-triplets-and-high-order-multiples-booklet/"
+      },
+      {
+        "name": "Cost of raising a child",
+        "authors": [
+          "Mandy Sleight"
+        ],
+        "url": "https://www.bankrate.com/insurance/life-insurance/cost-of-raising-a-child/"
       }
     ],
     "consecutiveOutcomes": []
@@ -755,7 +793,7 @@
         "source": "https://www.asahi.com/ajw/articles/13112172"
       }
     ],
-    "chance": 0.00033,
+    "chance": "24 in 1000000",
     "references": [
       {
         "name": "Trends in shaken baby syndrome diagnosis codes among young children hospitalized for abuse",
@@ -782,7 +820,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Anemia.JPG"
       }
     ],
-    "chance": 0.365,
+    "chance": "365 in 1000",
     "references": [
       {
         "name": "Anaemia in women and children",
@@ -809,7 +847,7 @@
         "source": "https://labblog.uofmhealth.org/rounds/study-financial-hardship-prevalent-during-and-after-pregnancy"
       }
     ],
-    "chance": 0.24,
+    "chance": "24%",
     "references": [
       {
         "name": "Study: Financial hardship prevalent during and after pregnancy",
@@ -838,7 +876,7 @@
         "source": "https://www.flickr.com/photos/european_parliament/4135410159"
       }
     ],
-    "chance": 0.2,
+    "chance": "20%",
     "references": [
       {
         "name": "Fact Sheet: Domestic Violence and Pregnancy",

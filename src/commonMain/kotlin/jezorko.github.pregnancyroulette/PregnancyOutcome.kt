@@ -1,30 +1,30 @@
 package jezorko.github.pregnancyroulette
 
 import kotlinx.serialization.Serializable
-
-val healthyBaby = PregnancyOutcome(
-    name = "Congratulations!",
-    description = "You were lucky enough to birth a healthy baby and have no negative outcomes, but remember that this list is not exhaustive.",
-    commonNames = emptyList(),
-    isNegative = false,
-    tags = Tags(),
-    images = listOf(
-        PregnancyOutcomeImage(
-            url = "https://mothertobaby.org/wp-content/uploads/2020/06/MotherToBaby-Homepage-Header-1600x900-1.jpg",
-            description = "Parent holding a healthy baby.",
-            source = "https://mothertobaby.org/"
-        )
-    ),
-    chance = 0.0,
-    references = emptyList(),
-    consecutiveOutcomes = emptyList()
-)
+import kotlin.random.Random
 
 @Serializable
 data class Tags(
     val own: Set<String> = emptySet(),
     val excludes: Set<String> = emptySet()
 )
+
+data class Chance(val value: String) {
+    fun test(random: Random = Random) = when (value) {
+        in Regex("\\d+ in \\d+") -> {
+            val split = value.split(" in ")
+            split[0].toInt() >= random.nextInt(split[1].toInt()) + 1
+        }
+        in Regex("\\d+%") -> {
+            value.removeSuffix("%").toInt() >= random.nextInt(100) + 1
+        }
+        else -> throw IllegalArgumentException("invalid chance value $value")
+    }
+
+    override fun toString() = value
+
+    private operator fun Regex.contains(text: CharSequence): Boolean = matches(text)
+}
 
 @Serializable
 data class PregnancyOutcome(
@@ -34,15 +34,11 @@ data class PregnancyOutcome(
     val isNegative: Boolean,
     val tags: Tags,
     val images: List<PregnancyOutcomeImage>,
-    val chance: Double,
+    val chance: String,
     val references: List<PregnancyOutcomeReference>,
     val consecutiveOutcomes: List<PregnancyOutcome>
 ) {
-    init {
-        if (chance < 0 || chance > 1) {
-            throw IllegalArgumentException("chance of outcome $name must be between 0 and 1")
-        }
-    }
+    val parsedChance get() = Chance(chance)
 }
 
 @Serializable
