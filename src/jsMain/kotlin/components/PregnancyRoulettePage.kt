@@ -8,7 +8,7 @@ import org.w3c.dom.url.URLSearchParams
 import react.FC
 import react.Props
 import react.useState
-import shared.OutcomesSerializer
+import shared.outcomesSerializerPromise
 import shared.randomOutcomes
 
 const val outcomesParamName = "outcomes"
@@ -17,8 +17,10 @@ val PregnancyRoulettePage = FC<Props> {
     val urlParams = URLSearchParams(window.location.search)
     var currentOutcomesState: List<PregnancyOutcome>? by useState(null)
     if (currentOutcomesState == null) {
-        urlParams.get(outcomesParamName)?.let(OutcomesSerializer::deserializeOutcomes)?.then {
-            currentOutcomesState = it
+        outcomesSerializerPromise.then { outcomesSerializer ->
+            urlParams.get(outcomesParamName)?.let(outcomesSerializer::deserializeOutcomes)?.also {
+                currentOutcomesState = it
+            }
         }
     }
     val currentOutcomes = currentOutcomesState
@@ -30,7 +32,8 @@ val PregnancyRoulettePage = FC<Props> {
     GetPregnantButton {
         onClick = {
             randomOutcomes().then { newOutcomes ->
-                OutcomesSerializer.serializeOutcomes(newOutcomes).then { serializedOutcomes ->
+                outcomesSerializerPromise.then { outcomesSerializer ->
+                    val serializedOutcomes = outcomesSerializer.serializeOutcomes(newOutcomes)
                     urlParams.set(outcomesParamName, serializedOutcomes)
                     val newRelativePath = window.location.pathname + '?' + urlParams.toString()
                     window.history.pushState(null, "", newRelativePath)
@@ -39,7 +42,6 @@ val PregnancyRoulettePage = FC<Props> {
             }
         }
     }
-
 
     if (currentOutcomes == null) {
         WebsiteDescription {}
