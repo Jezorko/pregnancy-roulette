@@ -6,7 +6,7 @@ object Constants {
         if (outcomes == null) {
             "Spin the wheel and see which side-effects of pregnancy you can get!"
         } else if (outcomes.isEmpty())
-            "My simulated pregnancy was a fully success!" +
+            "My simulated pregnancy was a full success!" +
                     " Spin the wheel and see how lucky YOU are!"
         else
             "My simulated pregnancy ended up with ${outcomes.filter { it.isNegative }.size} negative" +
