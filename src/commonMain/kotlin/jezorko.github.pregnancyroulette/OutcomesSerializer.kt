@@ -13,6 +13,7 @@ class OutcomesSerializer(private val base64: Base64, private val allOutcomes: Li
     fun deserializeOutcomes(outcomes: String): List<PregnancyOutcome> = base64.decode(outcomes)
         .let { decodedOutcomes ->
             if (decodedOutcomes.isEmpty()) emptyList()
+            else if (decodedOutcomes == "EVERYTHING") allOutcomes
             else decodedOutcomes.split(",")
                 .map(String::toInt)
                 .map(allOutcomes::get)
