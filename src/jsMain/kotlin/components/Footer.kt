@@ -1,31 +1,25 @@
 package components
 
-import api.ApiClient.getVersionInfo
+import api.ApiClient.versionInfo
 import jezorko.github.pregnancyroulette.VersionInfo
 import react.FC
 import react.Props
-import react.dom.html.ReactHTML
 import react.dom.html.ReactHTML.a
-import react.dom.html.ReactHTML.div
 import react.dom.html.ReactHTML.footer
 import react.dom.html.ReactHTML.span
 import react.useState
-
-val versionInfoPromise = getVersionInfo()
 
 val Footer = FC<Props> { _ ->
 
     var versionInfoState: VersionInfo? by useState(null)
     if (versionInfoState == null) {
-        versionInfoPromise.then {
-            versionInfoState = it
-        }
+        versionInfo.then { versionInfoState = it }
     }
 
     val versionInfo = versionInfoState
 
     footer {
-        id="footer"
+        id = "footer"
 
         val buildVersionInfoId = "build-version-info"
         if (versionInfo == null) {

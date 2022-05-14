@@ -12,24 +12,22 @@ import kotlin.js.Promise
 
 object ApiClient {
 
-    fun getVersionInfo(): Promise<VersionInfo> {
-        return window.fetch(
-            Routes.VersionsRoute.path,
-            object : RequestInit {
-                override var method: String? = "GET"
-            }
-        ).flatThen { response ->
-            when (response.status.toInt()) {
-                200 -> response.text()
-                    .then { responseBodyAsText -> json.decodeFromString(responseBodyAsText) }
-                else -> Promise.resolve(VersionInfo("unknown", "unknown")).also {
-                    console.error("cannot resolve version information, received HTTP ${response.status}")
-                }
+    val versionInfo: Promise<VersionInfo> = window.fetch(
+        Routes.VersionsRoute.path,
+        object : RequestInit {
+            override var method: String? = "GET"
+        }
+    ).flatThen { response ->
+        when (response.status.toInt()) {
+            200 -> response.text()
+                .then { responseBodyAsText -> json.decodeFromString(responseBodyAsText) }
+            else -> Promise.resolve(VersionInfo("unknown", "unknown")).also {
+                console.error("cannot resolve version information, received HTTP ${response.status}")
             }
         }
     }
 
-    fun getAllOutcomes(): Promise<List<PregnancyOutcome>> = window.fetch(
+    val allOutcomes: Promise<List<PregnancyOutcome>> = window.fetch(
         Routes.PregnancyOutcomesRoute.path,
         object : RequestInit {}.apply {
             method = "GET"

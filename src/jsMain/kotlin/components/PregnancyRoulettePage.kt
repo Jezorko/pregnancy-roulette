@@ -1,41 +1,52 @@
 package components
 
 import jezorko.github.pregnancyroulette.Constants
+import jezorko.github.pregnancyroulette.PregnancyOutcome
 import kotlinx.browser.document
 import kotlinx.browser.window
 import org.w3c.dom.url.URLSearchParams
 import react.FC
 import react.Props
 import react.useState
-import kotlin.random.Random
+import shared.OutcomesSerializer
+import shared.randomOutcomes
 
-const val resultIdParam = "resultId"
+const val outcomesParamName = "outcomes"
 
 val PregnancyRoulettePage = FC<Props> {
     val urlParams = URLSearchParams(window.location.search)
+    var currentOutcomesState: List<PregnancyOutcome>? by useState(null)
+    if (currentOutcomesState == null) {
+        urlParams.get(outcomesParamName)?.let(OutcomesSerializer::deserializeOutcomes)?.then {
+            currentOutcomesState = it
+        }
+    }
+    val currentOutcomes = currentOutcomesState
 
-    var resultId: Int? by useState(urlParams.get(resultIdParam)?.toIntOrNull())
-
-    if (resultId != null) {
+    if (currentOutcomes != null) {
         Confetti { }
     }
 
     GetPregnantButton {
         onClick = {
-            val randomId = Random.nextInt(from = 0, until = Int.MAX_VALUE)
-            urlParams.set(resultIdParam, randomId.toString())
-            val newRelativePath = window.location.pathname + '?' + urlParams.toString();
-            window.history.pushState(null, "", newRelativePath);
-            resultId = randomId
+            randomOutcomes().then { newOutcomes ->
+                OutcomesSerializer.serializeOutcomes(newOutcomes).then { serializedOutcomes ->
+                    urlParams.set(outcomesParamName, serializedOutcomes)
+                    val newRelativePath = window.location.pathname + '?' + urlParams.toString()
+                    window.history.pushState(null, "", newRelativePath)
+                    currentOutcomesState = newOutcomes
+                }
+            }
         }
     }
 
-    if (resultId == null) {
+
+    if (currentOutcomes == null) {
         WebsiteDescription {}
     } else {
-        document.title = "${Constants.APPLICATION_TITLE} #$resultId"
+        document.title = "${Constants.APPLICATION_TITLE} (${currentOutcomes.size} outcomes)"
         RandomPregnancyOutcomesList {
-            this.resultId = resultId
+            this.outcomes = currentOutcomes
         }
     }
 
