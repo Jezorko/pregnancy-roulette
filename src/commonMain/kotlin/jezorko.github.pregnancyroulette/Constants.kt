@@ -10,7 +10,7 @@ object Constants {
                     " Spin the wheel and see how lucky YOU are!"
         else
             "My simulated pregnancy ended up with ${
-                outcomes.filter { !it.isNegative }.size.let { negativeOutcomesCount ->
+                outcomes.filter { it.isNegative }.size.let { negativeOutcomesCount ->
                     val positiveOutcomesCount = outcomes.size - negativeOutcomesCount
                     ((if (positiveOutcomesCount == 0) emptyList()
                     else listOf("$positiveOutcomesCount positive")) +
