@@ -5,11 +5,11 @@ import react.FC
 import react.Props
 import react.dom.html.ReactHTML.div
 
-external interface RandomPregnancyOutcomesListProps : Props {
+external interface PregnancyOutcomesListProps : Props {
     var outcomes: List<PregnancyOutcome>
 }
 
-val RandomPregnancyOutcomesList = FC<RandomPregnancyOutcomesListProps> { props ->
+val PregnancyOutcomesList = FC<PregnancyOutcomesListProps> { props ->
 
     val outcomes = props.outcomes
 

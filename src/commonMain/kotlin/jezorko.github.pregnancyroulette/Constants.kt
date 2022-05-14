@@ -21,4 +21,6 @@ object Constants {
             } outcomes!" +
                     " Spin the wheel and see how many you can get!"
 
+    const val HASHTAGS = "PregnancyRoulette,antinatalism"
+
 }

@@ -1,48 +1,66 @@
 package components
 
+import jezorko.github.pregnancyroulette.Constants
+import jezorko.github.pregnancyroulette.PregnancyOutcome
 import kotlinx.browser.window
 import react.FC
 import react.Props
-import react.dom.html.AnchorTarget
-import react.dom.html.ReactHTML.a
+import react.dom.html.ReactHTML.button
 import react.dom.html.ReactHTML.div
-import shared.attributes
+import react.dom.html.ReactHTML.img
 
 external fun encodeURIComponent(input: String): String
 
-external interface FacebookShareButtonProps : Props {
-    var shareLink: String?
+external interface SocialMediaShareButtonProps : Props {
+    var serviceName: String?
+    var popupUrl: String?
+    var imageUrl: String?
 }
 
-val FacebookShareButton = FC<FacebookShareButtonProps> { props ->
-    val elementId = "fb-share-button"
-    console.log(window.location.href)
-    val shareLink = props.shareLink ?: window.location.href
-    div {
+val SocialMediaShareButton = FC<SocialMediaShareButtonProps> { props ->
+    val idSuffix = "share-button"
+    val elementId = "${props.serviceName?.lowercase()}-$idSuffix"
+    button {
         id = elementId
-        className = elementId
-        attributes = mapOf(
-            "data-href" to encodeURIComponent(shareLink),
-            "data-layout" to "button",
-            "data-size" to "large"
-        )
-        a {
-            +"Share on Facebook"
-            className = "fb-xfbml-parse-ignore"
-            target = AnchorTarget._blank
-            href =
-                "https://www.facebook.com/sharer/sharer.php?u=${
-                    encodeURIComponent(shareLink)
-                };src=sdkpreparse"
+        className = "social-media-$idSuffix"
+        onClick = {
+            window.open(
+                props.popupUrl!!,
+                "pop",
+                "width=600, height=400, scrollbars=no"
+            )
+        }
+        img {
+            id = "$elementId-image"
+            className = "social-media-$idSuffix-image"
+            src = props.imageUrl
+            alt = "Share on ${props.serviceName}"
         }
     }
 }
 
-val SocialMediaShareButtons = FC<RandomPregnancyOutcomesListProps> {
+external interface SocialMediaShareButtonsProps : Props {
+    var outcomes: List<PregnancyOutcome>?
+}
+
+val SocialMediaShareButtons = FC<SocialMediaShareButtonsProps> { props ->
     div {
+        +"Share on socials: "
         id = "social-media-share-buttons"
-        FacebookShareButton {
-            shareLink = "https://pregnancy-roulette.herokuapp.com/?outcomes=MjMsMTcsMTIsMSwxNiwxMCwxMw%3D%3D"
+
+        SocialMediaShareButton {
+            serviceName = "Facebook"
+            popupUrl = "https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}"
+            imageUrl = "https://static.xx.fbcdn.net/rsrc.php/v3/y4/r/ps3LEjFUMch.png"
+        }
+        SocialMediaShareButton {
+            serviceName = "Twitter"
+            popupUrl = "https://twitter.com/intent/tweet?text=${
+                encodeURIComponent(Constants.applicationDescription(props.outcomes))
+            }&url=${
+                encodeURIComponent(window.location.href)
+            }&hashtags=${Constants.HASHTAGS}"
+            imageUrl = "https://twitter.com/favicon.ico"
         }
     }
 }

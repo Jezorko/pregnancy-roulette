@@ -6,6 +6,36 @@
     height: 10em;
 }
 
+#social-media-share-buttons {
+    left: 0;
+    top: 35%;
+    width: 80%;
+    margin: 2% 3%;
+}
+
+#facebook-share-button {
+    background-color: rgb(3, 112, 255);
+}
+
+#twitter-share-button {
+    background-color: black;
+}
+
+.social-media-share-button {
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding: 0;
+}
+
+.social-media-share-button-image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
 .confetti-canvas {
     width: 0;
     height: 0;
@@ -27,7 +57,7 @@
     left: 0;
     top: 35%;
     width: 80%;
-    margin: 5% 10%;
+    margin: 2% 3%;
 }
 
 #random-pregnancy-outcomes-list {
