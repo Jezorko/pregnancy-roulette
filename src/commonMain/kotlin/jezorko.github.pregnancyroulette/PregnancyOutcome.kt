@@ -29,14 +29,14 @@ data class Tags(
 @Serializable
 data class PregnancyOutcome(
     val name: String,
-    val commonNames: List<String>,
+    val commonNames: List<String> = emptyList(),
     val description: String,
     val isNegative: Boolean,
-    val tags: Tags,
+    val tags: Tags = Tags(),
     val images: List<PregnancyOutcomeImage>,
     val chance: Double,
     val references: List<PregnancyOutcomeReference>,
-    val consecutiveOutcomes: List<PregnancyOutcome>
+    val consecutiveOutcomes: List<PregnancyOutcome> = emptyList()
 ) {
     init {
         if (chance < 0 || chance > 1) {
@@ -55,7 +55,7 @@ data class PregnancyOutcomeImage(
 @Serializable
 data class PregnancyOutcomeReference(
     val name: String,
-    val authors: List<String>,
+    val authors: List<String> = emptyList(),
     val url: String
 ) {
     override fun toString(): String {

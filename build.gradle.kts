@@ -42,7 +42,7 @@ kotlin {
             }
         }
         val jvmMain by getting {
-            val jacksonVersion = "2.13.1"
+            val jacksonVersion = "2.13.2"
             dependencies {
                 implementation("io.ktor:ktor-server-netty:1.6.7")
                 implementation("io.ktor:ktor-html-builder:1.6.7")
@@ -51,6 +51,7 @@ kotlin {
                 implementation("com.fasterxml.jackson.core:jackson-core:$jacksonVersion")
                 implementation("com.fasterxml.jackson.core:jackson-databind:$jacksonVersion")
                 implementation("com.fasterxml.jackson.module:jackson-module-kotlin:$jacksonVersion")
+                implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-toml:$jacksonVersion")
             }
         }
         val jvmTest by getting
