@@ -53,6 +53,7 @@ fun HTML.index(outcomes: List<PregnancyOutcome>?) {
             id = "root"
         }
         script(src = "https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js") {}
+        script(src = "https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v13.0") { nonce = "UbC7kxY4" }
         script(src = "/static/pregnancy-roulette.js") {}
     }
 }

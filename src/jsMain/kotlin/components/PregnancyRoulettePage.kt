@@ -28,6 +28,8 @@ val PregnancyRoulettePage = FC<Props> {
         Confetti { }
     }
 
+    SocialMediaShareButtons {}
+
     GetPregnantButton {
         onClick = {
             randomOutcomes().then { newOutcomes ->
