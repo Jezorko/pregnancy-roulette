@@ -4,27 +4,27 @@ import react.FC
 import react.Props
 import react.dom.html.ReactHTML.canvas
 
-external interface ConfettiProps : Props {
-    var resultId: Int?
-}
 
-val Confetti = FC<ConfettiProps> { props ->
-    val canvasIdPrefix = "confetti-canvas"
-    val canvasId = "$canvasIdPrefix-${props.resultId}"
+val Confetti = FC<Props> { _ ->
+    val canvasId = "confetti-canvas"
     canvas {
         id = canvasId
-        className = canvasIdPrefix
+        className = canvasId
 
         fun showConfetti() {
             eval(
                 """
-            confetti.create(document.getElementById('$canvasId'), {
-                resize: true,
-                useWorker: true
-            })({
+            if (!window.myConfetti) {
+                window.myConfetti = confetti.create(document.getElementById('$canvasId'), {
+                    resize: true,
+                    useWorker: true,
+                    disableForReducedMotion: true
+                })                
+            }
+            window.myConfetti({
                 particleCount: 100,
                 spread: 160
-            });
+            }).then(() => window.myConfetti.reset());
             """
             )
         }

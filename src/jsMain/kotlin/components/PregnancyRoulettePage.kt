@@ -17,7 +17,7 @@ val PregnancyRoulettePage = FC<Props> {
     var resultId: Int? by useState(urlParams.get(resultIdParam)?.toIntOrNull())
 
     if (resultId != null) {
-        Confetti { this.resultId = resultId }
+        Confetti { }
     }
 
     GetPregnantButton {
