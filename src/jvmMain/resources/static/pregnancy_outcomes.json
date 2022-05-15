@@ -887,5 +887,35 @@
       }
     ],
     "consecutiveOutcomes": []
+  },
+  {
+    "name": "Dysgeusia",
+    "commonNames": [],
+    "description": "Majority of pregnant people report some change in taste during pregnancy. Most commonly perceived as a metallic taste, it can be felt even when not eating.",
+    "isNegative": true,
+    "tags": {
+      "own": [
+        "during-pregnancy-mother"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/%D8%B2%D8%A8%D8%A7%D9%86_tongue.jpg?20160312133447",
+        "description": "Photo of a tongue.",
+        "source": "https://commons.wikimedia.org/wiki/File:%D8%B2%D8%A8%D8%A7%D9%86_tongue.jpg"
+      }
+    ],
+    "chance": "93%",
+    "references": [
+      {
+        "name": "Metallic Taste During Pregnancy (Dysgeusia)",
+        "authors": [
+          "Amy O’Connor",
+          "Kameelah Phillips, M.D."
+        ],
+        "url": "https://www.whattoexpect.com/pregnancy/symptoms-and-solutions/metallic-taste.aspx"
+      }
+    ],
+    "consecutiveOutcomes": []
   }
 ]
