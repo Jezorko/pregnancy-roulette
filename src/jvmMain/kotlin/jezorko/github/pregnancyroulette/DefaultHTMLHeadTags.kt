@@ -9,6 +9,10 @@ fun attachDefaultTagsTo(head: HEAD) = head.apply {
     link { rel = "icon"; href = "/favicon.png"; type = "image/png" }
     link { rel = "shortcut icon"; href = "/favicon.ico" }
     meta {
+        name = "google-site-verification"
+        content = "EB2HSryY6T7e424Mnjdq5T960Fhx1py8zMN8_yPvHHo"
+    }
+    meta {
         name = "viewport"
         content = "width=device-width, initial-scale=1"
     }
