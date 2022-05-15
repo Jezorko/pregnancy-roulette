@@ -956,5 +956,35 @@
       }
     ],
     "consecutiveOutcomes": []
+  },
+  {
+    "name": "Morning Sickness",
+    "commonNames": [],
+    "description": "Nausea and vomiting that happens during pregnancy. Despite its name, you can have morning sickness at any time of day.",
+    "isNegative": true,
+    "tags": {
+      "own": [
+        "during-pregnancy-mother"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/A_woman_holding_her_stomach_and_vomiting_into_a_bucket_after_Wellcome_V0011186.jpg",
+        "description": "Drawing of a woman vomiting into a bucket.",
+        "source": "https://commons.wikimedia.org/wiki/File:A_woman_holding_her_stomach_and_vomiting_into_a_bucket_after_Wellcome_V0011186.jpg"
+      }
+    ],
+    "chance": "50%",
+    "references": [
+      {
+        "name": "Morning Sickness",
+        "authors": [
+          "Camille Peri",
+          "Hansa D. Bhargava, MD"
+        ],
+        "url": "https://www.webmd.com/baby/guide/morning-sickness-pregnant"
+      }
+    ],
+    "consecutiveOutcomes": []
   }
 ]
