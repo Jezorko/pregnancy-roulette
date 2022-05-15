@@ -110,7 +110,7 @@ fun Application.outcomeSuggestionsRoutes() = routing {
         }
     }
     post(Routes.SuggestionsRoute.path) {
-        val submitterIp = call.request.origin.remoteHost
+        val submitterIp = call.request.local.remoteHost
         val currentTimestamp = currentTimeMillis()
         val lastSubmittedTimestamp = submitterIpToLastSubmittedTimestamp.put(submitterIp, currentTimestamp) ?: 0L
         if (currentTimestamp - lastSubmittedTimestamp > TimeUnit.MINUTES.toMillis(1)) {
