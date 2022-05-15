@@ -43,22 +43,33 @@ val Footer = FC<Props> { _ ->
             }
         }
 
-        val inspiredById = "inspired-by"
         span {
             +"Inspired by"
-            id = inspiredById
             className = "footer-element"
             a {
-                id = "$inspiredById-childfree-link"
                 className = "footer-element"
                 +"r/childfree"
                 href = "https://www.reddit.com/r/childfree"
             }
             a {
-                id = "$inspiredById-antinatalism-link"
                 className = "footer-element"
                 +"r/antinatalism"
                 href = "https://www.reddit.com/r/antinatalism/"
+            }
+            a {
+                className = "footer-element"
+                +"StopHavingKids.org"
+                href = "https://www.stophavingkids.org/"
+            }
+        }
+
+        span {
+            +"See all possible outcomes"
+            className = "footer-element"
+            a {
+                className = "footer-element"
+                +"here"
+                href = "http://localhost:3000/?outcomes=RVZFUllUSElORw=="
             }
         }
     }
