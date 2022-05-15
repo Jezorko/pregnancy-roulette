@@ -565,7 +565,7 @@
         "source": "https://commons.wikimedia.org/wiki/File:Hemorrhoids.jpg"
       }
     ],
-    "chance": "40%",
+    "chance": "45%",
     "references": [
       {
         "name": "Perianal Diseases in Pregnancy and After Childbirth: Frequency, Risk Factors, Impact on Women's Quality of Life and Treatment Methods",
@@ -580,6 +580,15 @@
         "name": "Common Conditions",
         "authors": [],
         "url": "https://www.urmc.rochester.edu/ob-gyn/obstetrics/after-delivery/common-conditions.aspx"
+      },
+      {
+        "name": "What to Know About Pregnancy Hemorrhoids",
+        "authors": [
+          "Natalie Silver",
+          "Kirsten Nunez",
+          "Stacy A. Henigsman, DO"
+        ],
+        "url": "https://www.healthline.com/health/pregnancy/pregnancy-hemorrhoids#causes"
       }
     ],
     "consecutiveOutcomes": []
