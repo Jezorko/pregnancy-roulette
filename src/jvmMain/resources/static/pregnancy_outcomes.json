@@ -87,7 +87,13 @@
             "postpartum-mother"
           ]
         },
-        "images": [],
+        "images": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Clitoris_3D_%28v2%29.jpg",
+            "description": "3D render of a clitoris.",
+            "source": "https://commons.wikimedia.org/wiki/File:Clitoris_3D_(v2).jpg"
+          }
+        ],
         "chance": "1 in 50",
         "references": [
           {
