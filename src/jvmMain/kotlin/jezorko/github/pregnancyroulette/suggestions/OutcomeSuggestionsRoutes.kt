@@ -115,15 +115,15 @@ fun Application.outcomeSuggestionsRoutes() = routing {
         val lastSubmittedTimestamp = submitterIpToLastSubmittedTimestamp.put(submitterIp, currentTimestamp) ?: 0L
         if (currentTimestamp - lastSubmittedTimestamp > TimeUnit.MINUTES.toMillis(1)) {
             try {
-                fun getParameter(parameterName: String) = call.parameters[parameterName].toString()
+                val body = bodyAsForm()
                 OutcomeSuggestionsRepository.save(
                     OutcomeSuggestion(
                         suggestionSourceIp = submitterIp,
                         createdAtTimestamp = currentTimestamp,
-                        name = getParameter(RequestParameters.name),
-                        description = getParameter(RequestParameters.description),
-                        chance = getParameter(RequestParameters.chance),
-                        referenceUrl = getParameter(RequestParameters.referenceUrl)
+                        name = body[RequestParameters.name]!!,
+                        description = body[RequestParameters.description]!!,
+                        chance = body[RequestParameters.chance]!!,
+                        referenceUrl = body[RequestParameters.referenceUrl]!!
                     )
                 )
                 call.respondRedirect(Routes.AcceptedSuggestionsRoute.path)

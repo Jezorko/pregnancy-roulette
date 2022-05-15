@@ -2,6 +2,7 @@ package jezorko.github.pregnancyroulette
 
 import io.ktor.application.*
 import io.ktor.http.*
+import io.ktor.request.*
 import io.ktor.response.*
 import io.ktor.util.pipeline.*
 
@@ -12,3 +13,12 @@ suspend fun PipelineContext<Unit, ApplicationCall>.requireAdmin(block: suspend P
         call.respondText(status = HttpStatusCode.Unauthorized) { "invalid admin token" }
     }
 }
+
+suspend fun PipelineContext<Unit, ApplicationCall>.bodyAsForm() = call.receiveText()
+    .let { body ->
+        val parts = body.split("&")
+        parts.map { part ->
+            val keyAndValue = part.split("=")
+            keyAndValue[0] to keyAndValue[1]
+        }.toMap()
+    }
