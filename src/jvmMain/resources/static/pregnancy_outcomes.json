@@ -1058,5 +1058,40 @@
       }
     ],
     "consecutiveOutcomes": []
+  },
+  {
+    "name": "Pelvic Floor Disorder",
+    "commonNames": [],
+    "description": "Includes a broad spectrum of conditions such as urinary incontinence, pelvic organ prolapse, or anal incontinence.",
+    "isNegative": true,
+    "tags": {
+      "own": [
+        "postpartum-mother"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Pelvic_Muscles_%28Female_Side%29_%28cropped%29.png",
+        "description": "Illustration of pelvic muscles.",
+        "source": "https://commons.wikimedia.org/wiki/File:Pelvic_Muscles_(Female_Side)_(cropped).png"
+      }
+    ],
+    "chance": "40%",
+    "references": [
+      {
+        "name": "Prevalence and risk factors for pelvic floor disorders during early and late pregnancy in a cohort of Austrian women",
+        "authors": [
+          "Barbara Bodner-Adler",
+          "Oliver Kimberger",
+          "Thomas Laml",
+          "Ksenia Halpern",
+          "Clara Beitl",
+          "Wolfgang Umek",
+          "Klaus Bodner"
+        ],
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6814848/"
+      }
+    ],
+    "consecutiveOutcomes": []
   }
 ]
