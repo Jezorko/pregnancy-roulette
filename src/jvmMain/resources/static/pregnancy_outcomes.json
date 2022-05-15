@@ -402,9 +402,9 @@
     },
     "images": [
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Panic_button.jpg",
-        "description": "Photo of a red keyboard button with \"PANIC\" written on it.",
-        "source": "https://upload.wikimedia.org/wikipedia/commons/1/11/Panic_button.jpg"
+        "url": "https://news.yale.edu/sites/default/files/styles/featured_media/public/adobestock_352536308.jpeg",
+        "description": "An illustration of a head with glitched brain.",
+        "source": "https://news.yale.edu/2020/12/21/brain-tissue-yields-clues-causes-ptsd"
       }
     ],
     "chance": "10%",
