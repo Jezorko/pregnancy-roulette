@@ -48,27 +48,22 @@ val SocialMediaShareButtons = FC<SocialMediaShareButtonsProps> { props ->
         +"Share on socials: "
         id = "social-media-share-buttons"
 
+        val shareLink = encodeURIComponent(window.location.href.substringBefore("?"))
+        val description = encodeURIComponent(Constants.applicationDescription(props.outcomes))
         SocialMediaShareButton {
             serviceName = "Facebook"
-            popupUrl = "https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}"
+            popupUrl = "https://www.facebook.com/sharer/sharer.php?u=$shareLink"
             imageUrl = "https://facebook.com/favicon.ico"
         }
         SocialMediaShareButton {
             serviceName = "Twitter"
-            popupUrl = "https://twitter.com/intent/tweet?text=${
-                encodeURIComponent(Constants.applicationDescription(props.outcomes))
-            }&url=${
-                encodeURIComponent(window.location.href)
-            }&hashtags=${Constants.HASHTAGS}"
+            popupUrl =
+                "https://twitter.com/intent/tweet?text=$description&url=$shareLink&hashtags=${Constants.HASHTAGS}"
             imageUrl = "https://twitter.com/favicon.ico"
         }
         SocialMediaShareButton {
             serviceName = "Reddit"
-            popupUrl = "https://www.reddit.com/submit?url=${
-                encodeURIComponent(window.location.href)
-            }&title=${
-                encodeURIComponent(Constants.applicationDescription(props.outcomes))
-            }"
+            popupUrl = "https://www.reddit.com/submit?url=$shareLink&title=$description"
             imageUrl = "https://www.reddit.com/favicon.ico"
         }
     }
