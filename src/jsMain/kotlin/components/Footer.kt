@@ -79,7 +79,7 @@ val Footer = FC<Props> { _ ->
             a {
                 className = "footer-element"
                 +"Suggest an outcome"
-                href="/suggestions"
+                href = ""
                 onClick = {
                     window.open(
                         "/suggestions",
