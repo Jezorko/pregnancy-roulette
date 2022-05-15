@@ -1,5 +1,6 @@
 package jezorko.github.pregnancyroulette
 
+import java.util.*
 import kotlin.reflect.KProperty0
 
 interface ConfigurationVariable<T> {
@@ -15,13 +16,52 @@ class EnvironmentVariable<T>(
         get() = System.getenv(thisProperty.name.uppercase()).let { if (it != null) mapper(it) else defaultValue }
 }
 
+enum class Environment {
+    LOCAL, HEROKU
+}
 
 object Configuration {
+
+    val ENVIRONMENT: EnvironmentVariable<Environment> = EnvironmentVariable(
+        Configuration::ENVIRONMENT,
+        Environment.LOCAL,
+        Environment::valueOf
+    )
 
     val PORT: EnvironmentVariable<Int> = EnvironmentVariable(
         Configuration::PORT,
         3000,
         String::toInt
+    )
+
+    val JDBC_DATABASE_URL: EnvironmentVariable<String> = EnvironmentVariable(
+        Configuration::JDBC_DATABASE_URL,
+        "",
+        String::toString
+    )
+
+    val JDBC_DATABASE_USERNAME: EnvironmentVariable<String> = EnvironmentVariable(
+        Configuration::JDBC_DATABASE_USERNAME,
+        "",
+        String::toString
+    )
+
+    val JDBC_DATABASE_PASSWORD: EnvironmentVariable<String> = EnvironmentVariable(
+        Configuration::JDBC_DATABASE_PASSWORD,
+        "",
+        String::toString
+    )
+
+    val ADMIN_TOKEN: EnvironmentVariable<String> = EnvironmentVariable(
+        Configuration::ADMIN_TOKEN,
+        UUID.randomUUID().toString(),
+        String::toString
+    )
+
+    val LOG_SQL_QUERIES: EnvironmentVariable<Boolean> = EnvironmentVariable(
+        Configuration::LOG_SQL_QUERIES,
+        false,
+        String::toBoolean
     )
 
     private val HEROKU_APP_NAME: EnvironmentVariable<String?> = EnvironmentVariable(

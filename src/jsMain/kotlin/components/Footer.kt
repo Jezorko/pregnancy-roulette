@@ -2,6 +2,7 @@ package components
 
 import api.ApiClient.versionInfo
 import jezorko.github.pregnancyroulette.VersionInfo
+import kotlinx.browser.window
 import react.FC
 import react.Props
 import react.dom.html.ReactHTML.a
@@ -70,6 +71,22 @@ val Footer = FC<Props> { _ ->
                 className = "footer-element"
                 +"here"
                 href = "/?outcomes=RVZFUllUSElORw=="
+            }
+        }
+
+        span {
+            className = "footer-element"
+            a {
+                className = "footer-element"
+                +"Suggest an outcome"
+                href="/suggestions"
+                onClick = {
+                    window.open(
+                        "/suggestions",
+                        "pop",
+                        "width=600, height=400"
+                    )
+                }
             }
         }
     }
