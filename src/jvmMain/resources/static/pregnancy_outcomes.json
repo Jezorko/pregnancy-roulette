@@ -917,5 +917,35 @@
       }
     ],
     "consecutiveOutcomes": []
+  },
+  {
+    "name": "Carpal Tunnel Syndrome",
+    "commonNames": [],
+    "description": "Experts suggest CTS may be caused by hormone-related swelling during pregnancy. Symptoms include: numbness and tingling, throbbing sensation in hands, wrists and fingers, swollen fingers and problems performing fine motor skills.",
+    "isNegative": true,
+    "tags": {
+      "own": [
+        "during-pregnancy-mother"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Carpal_Tunnel_Syndrome.jpg/800px-Carpal_Tunnel_Syndrome.jpg?20190423093540",
+        "description": "Illustration of a hand with wrist bones and nerves shown.",
+        "source": "https://commons.wikimedia.org/wiki/File:Carpal_Tunnel_Syndrome.jpg"
+      }
+    ],
+    "chance": "45%",
+    "references": [
+      {
+        "name": "What Causes Carpal Tunnel Syndrome During Pregnancy, and How’s It Treated?",
+        "authors": [
+          "Donna Christiano",
+          "Holly Ernst, PA-C"
+        ],
+        "url": "https://www.healthline.com/health/pregnancy/carpal-tunnel-pregnancy"
+      }
+    ],
+    "consecutiveOutcomes": []
   }
 ]
