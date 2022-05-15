@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow: /suggestions
+Disallow: /accepted-suggestions
+Disallow: /rejected-suggestions
+Disallow: /suggestions/all

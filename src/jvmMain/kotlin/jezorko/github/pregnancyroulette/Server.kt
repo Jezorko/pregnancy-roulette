@@ -51,6 +51,7 @@ fun main() {
             static("/") {
                 resource(resource = "/static/favicon.ico", remotePath = "favicon.ico")
                 resource(resource = "/static/favicon.png", remotePath = "favicon.png")
+                resource(resource = "/static/robots.txt", remotePath = "robots.txt")
             }
             static("/static") {
                 resource("pregnancy-roulette.js")
