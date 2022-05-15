@@ -986,5 +986,39 @@
       }
     ],
     "consecutiveOutcomes": []
+  },
+  {
+    "name": "Pain after birth",
+    "commonNames": [],
+    "description": "Delivery is not the only time when you will feel pain, as it may persist for months after. Stock up on paracetamol, you're gonna need it.",
+    "isNegative": true,
+    "tags": {
+      "own": [
+        "postpartum-mother"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://live.staticflickr.com/1901/44490871005_ebc85bd263_5k.jpg",
+        "description": "A photo of a bunch of pills.",
+        "source": "https://www.flickr.com/photos/91261194@N06/44490871005"
+      }
+    ],
+    "chance": "10%",
+    "references": [
+      {
+        "name": "Severity of Acute Pain After Childbirth, but not Type of Delivery, Predicts Persistent Pain and Postpartum Depression",
+        "authors": [
+          "James C. Eisenach, M.D.",
+          "Peter H. Pan, M.D.",
+          "Richard Smiley, M.D.",
+          "Patricia Lavand'homme, M.D.",
+          "Ruth Landau, M.D.",
+          "Timothy T. Houle, Ph.D."
+        ],
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2605246/"
+      }
+    ],
+    "consecutiveOutcomes": []
   }
 ]
