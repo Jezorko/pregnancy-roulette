@@ -15,10 +15,8 @@ suspend fun PipelineContext<Unit, ApplicationCall>.requireAdmin(block: suspend P
 }
 
 suspend fun PipelineContext<Unit, ApplicationCall>.bodyAsForm() = call.receiveText()
-    .let { body ->
-        val parts = body.split("&")
-        parts.map { part ->
-            val keyAndValue = part.split("=")
-            keyAndValue[0] to keyAndValue[1]
-        }.toMap()
+    .split("&")
+    .associate { part ->
+        val keyAndValue = part.split("=")
+        keyAndValue[0] to keyAndValue[1]
     }
