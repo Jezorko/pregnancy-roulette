@@ -3,6 +3,7 @@ package jezorko.github.pregnancyroulette.suggestions
 import io.ktor.application.*
 import io.ktor.features.*
 import io.ktor.html.*
+import io.ktor.request.*
 import io.ktor.response.*
 import io.ktor.routing.*
 import jezorko.github.pregnancyroulette.*
@@ -110,7 +111,7 @@ fun Application.outcomeSuggestionsRoutes() = routing {
         }
     }
     post(Routes.SuggestionsRoute.path) {
-        val submitterIp = call.request.local.remoteHost
+        val submitterIp = call.request.header("X-Forwarded-For") ?: call.request.local.remoteHost
         val currentTimestamp = currentTimeMillis()
         val lastSubmittedTimestamp = submitterIpToLastSubmittedTimestamp.put(submitterIp, currentTimestamp) ?: 0L
         if (currentTimestamp - lastSubmittedTimestamp > TimeUnit.MINUTES.toMillis(1)) {
