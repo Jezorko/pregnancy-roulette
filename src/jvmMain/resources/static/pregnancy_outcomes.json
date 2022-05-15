@@ -1020,5 +1020,37 @@
       }
     ],
     "consecutiveOutcomes": []
+  },
+  {
+    "name": "Pain during delivery",
+    "commonNames": [],
+    "description": "In a study conducted on 288 Swedish women, 41% of them considered delivery pain as the worst experience they have had.",
+    "isNegative": true,
+    "tags": {
+      "own": [
+        "postpartum-mother"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/ChildBirth.jpg/1600px-ChildBirth.jpg?20100120150921",
+        "description": "A photo of doctors delivering a baby.",
+        "source": "https://commons.wikimedia.org/wiki/File:ChildBirth.jpg"
+      }
+    ],
+    "chance": "41%",
+    "references": [
+      {
+        "name": "Women’s experience of pain during childbirth",
+        "authors": [
+          "Nastaran Mohammad Ali Beigi, MSc",
+          "Khadijeh Broumandfar, MSc",
+          "Parvin Bahadoran, MSc",
+          "Heidar Ali Abedi, PhD"
+        ],
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3093177/"
+      }
+    ],
+    "consecutiveOutcomes": []
   }
 ]
