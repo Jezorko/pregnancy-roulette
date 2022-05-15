@@ -69,7 +69,7 @@ val Footer = FC<Props> { _ ->
             a {
                 className = "footer-element"
                 +"here"
-                href = "http://localhost:3000/?outcomes=RVZFUllUSElORw=="
+                href = "/?outcomes=RVZFUllUSElORw=="
             }
         }
     }
