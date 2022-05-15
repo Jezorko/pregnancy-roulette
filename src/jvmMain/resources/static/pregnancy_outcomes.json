@@ -1093,5 +1093,34 @@
       }
     ],
     "consecutiveOutcomes": []
+  },
+  {
+    "name": "Bigger Feet",
+    "commonNames": [],
+    "description": "On average, the arch height decreases, and in turn, the foot length increases between 2 and 10 millimeters (about 0.1 to 0.4 inches) during pregnancy and five months after giving birth.",
+    "isNegative": true,
+    "tags": {
+      "own": [
+        "postpartum-mother"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Adult_Flatfoot.JPG",
+        "description": "Photograph of a long foot.",
+        "source": "https://commons.wikimedia.org/wiki/File:Adult_Flatfoot.JPG"
+      }
+    ],
+    "chance": "60%",
+    "references": [
+      {
+        "name": "After Pregnancy, Women Have Bigger Feet",
+        "authors": [
+          "Rachael Rettner"
+        ],
+        "url": "https://www.livescience.com/27583-foot-size-pregnancy.html"
+      }
+    ],
+    "consecutiveOutcomes": []
   }
 ]
