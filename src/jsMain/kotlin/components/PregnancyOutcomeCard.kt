@@ -7,7 +7,6 @@ import react.dom.html.ReactHTML.a
 import react.dom.html.ReactHTML.br
 import react.dom.html.ReactHTML.div
 import react.dom.html.ReactHTML.img
-import react.useState
 
 external interface PregnancyOutcomeCardProps : Props {
     var position: Int
@@ -17,30 +16,12 @@ external interface PregnancyOutcomeCardProps : Props {
 val PregnancyOutcomeCard = FC<PregnancyOutcomeCardProps> { props ->
     val pregnancyOutcome = props.pregnancyOutcome
     val prefix = "pregnancy-outcome-card"
-
-    var isRevealed: Boolean by useState(false)
-
     div {
         id = "$prefix-${props.position}"
         className = prefix
-
-        div {
-            id = "$prefix-${props.position}-cover"
-            className = "$prefix-cover ${if (isRevealed) "hidden" else "shown"}"
-            img {
-                id = "$prefix-${props.position}-cover-image"
-                className = "$prefix-cover-image"
-                src = "/static/${if (pregnancyOutcome.isNegative) "negative" else "positive"}_outcome.svg"
-                alt = "${if (pregnancyOutcome.isNegative) "negative" else "positive"} outcome"
-            }
-            onClick = {
-                isRevealed = !isRevealed
-            }
-        }
-
         div {
             id = "$prefix-${props.position}-inner"
-            className = "$prefix-inner ${if (!isRevealed) "hidden" else "shown"}"
+            className = "$prefix-inner"
 
             div {
                 id = "$prefix-${props.position}-front"
