@@ -1178,7 +1178,11 @@
     "isNegative": true,
     "tags": {
       "own": [
-        "postpartum-mother"
+        "during-pregnancy-mother",
+        "sexual-satisfation"
+      ],
+      "excludes": [
+        "sexual-satisfation"
       ]
     },
     "images": [
@@ -1212,6 +1216,39 @@
           "Iwona Szymusik"
         ],
         "url": "https://pubmed.ncbi.nlm.nih.gov/26994386/"
+      }
+    ],
+    "consecutiveOutcomes": []
+  },
+  {
+    "name": "Increased sex drive",
+    "commonNames": [],
+    "description": "For majority of the people, sex drive actually decreases during pregnancy but hey, you got lucky!",
+    "isNegative": false,
+    "tags": {
+      "own": [
+        "during-pregnancy-mother",
+        "sexual-satisfation"
+      ],
+      "excludes": [
+        "sexual-satisfation"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://cdn.pixabay.com/photo/2020/03/01/10/12/erotic-4892203_1280.jpg",
+        "description": "An illustration of two women in a intimate position.",
+        "source": "https://pixabay.com/es/illustrations/erotismo-dibujo-mujeres-er%c3%b3tico-4892203/"
+      }
+    ],
+    "chance": "20%",
+    "references": [
+      {
+        "name": "Sex in pregnancy – your honest experiences",
+        "authors": [
+          "Magda Ibrahim"
+        ],
+        "url": "https://www.madeformums.com/pregnancy/sex-in-pregnancy-your-honest-experiences/"
       }
     ],
     "consecutiveOutcomes": []
