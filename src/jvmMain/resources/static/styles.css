@@ -1,3 +1,7 @@
+.hidden {
+    display: none;
+}
+
 #get-pregnant-button {
     left: 0;
     top: 0;
@@ -105,6 +109,21 @@
 
 .pregnancy-outcome-card:hover .pregnancy-outcome-card-inner {
     transform: rotateY(180deg);
+}
+
+.pregnancy-outcome-card-cover {
+    border-radius: 10px;
+    background-color: gray;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.pregnancy-outcome-card-cover-image {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    margin: 10%;
 }
 
 .pregnancy-outcome-card-front, .pregnancy-outcome-card-back {
