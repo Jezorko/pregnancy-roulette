@@ -116,8 +116,12 @@
     backface-visibility: hidden;
 }
 
-.pregnancy-outcome-card-front {
-    background-color: gray;
+.pregnancy-outcome-card-front-negative {
+    background-color: #710000;
+}
+
+.pregnancy-outcome-card-front-positive {
+    background-color: #007106;
 }
 
 .pregnancy-outcome-card-back {

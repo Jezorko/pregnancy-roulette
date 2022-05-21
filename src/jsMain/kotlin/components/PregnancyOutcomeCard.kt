@@ -25,7 +25,7 @@ val PregnancyOutcomeCard = FC<PregnancyOutcomeCardProps> { props ->
 
             div {
                 id = "$prefix-${props.position}-front"
-                className = "$prefix-front"
+                className = "$prefix-front $prefix-front-${if (pregnancyOutcome.isNegative) "negative" else "positive"}"
                 pregnancyOutcome.images.firstOrNull()?.let { image ->
                     img {
                         id = "$prefix-${props.position}-image"
