@@ -1170,5 +1170,50 @@
       }
     ],
     "consecutiveOutcomes": []
+  },
+  {
+    "name": "Dissatisfaction with sexual life",
+    "commonNames": [],
+    "description": "Increased pain, hypoactive sexual desire disorder and other such conditions are to be expected in a pregnancy.",
+    "isNegative": true,
+    "tags": {
+      "own": [
+        "postpartum-mother"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://cdn.pixabay.com/photo/2020/03/01/10/12/erotic-4892203_1280.jpg",
+        "description": "An illustration of two women in a intimate position.",
+        "source": "https://pixabay.com/es/illustrations/erotismo-dibujo-mujeres-er%c3%b3tico-4892203/"
+      }
+    ],
+    "chance": "20%",
+    "references": [
+      {
+        "name": "Assessing the Impact of Pregnancy on Sexuality Using the Pregnancy Sexual Response Inventory",
+        "authors": [
+          "Hajrullah Fejza",
+          "Ejona Icka",
+          "Minire Alilaj",
+          "Magbule Elezi",
+          "Albina Fejza",
+          "Liridona Jemini"
+        ],
+        "url": "https://www.scirp.org/journal/paperinformation.aspx?paperid=83689"
+      },
+      {
+        "name": "Sexual activity during pregnancy",
+        "authors": [
+          "Monika Staruch",
+          "Aleksandra Kucharczyk",
+          "Katarzyna Zawadzka",
+          "Miroslaw Wielgos",
+          "Iwona Szymusik"
+        ],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/26994386/"
+      }
+    ],
+    "consecutiveOutcomes": []
   }
 ]
