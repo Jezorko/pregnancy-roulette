@@ -1122,5 +1122,53 @@
       }
     ],
     "consecutiveOutcomes": []
+  },
+  {
+    "name": "Regrets",
+    "commonNames": [],
+    "description": "Survey results vary greatly between countries, but approx. 7% of parents regret having children. On the other hand, only approx. 1% of people regret having an abortion.",
+    "isNegative": true,
+    "tags": {
+      "own": [
+        "postpartum-mother"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://live.staticflickr.com/47/106317416_a3bd56716a_c.jpg",
+        "description": "Photo of a tired person.",
+        "source": "https://www.flickr.com/photos/martinsphotoart/106317416"
+      }
+    ],
+    "chance": "7%",
+    "references": [
+      {
+        "name": "How many parents regret having children and how it is linked to their personality and health: Two studies with national samples in Poland",
+        "authors": [
+          "Konrad Piotrowski",
+          "Kenta Matsumura"
+        ],
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8294566/"
+      },
+      {
+        "name": "Emotions and decision rightness over five years following an abortion: An examination of decision difficulty and abortion stigma",
+        "authors": [
+          "Corinne H. Roccaa",
+          "Goleen Samari",
+          "Diana G. Foster",
+          "Heather Gould",
+          "Katrina Kimport"
+        ],
+        "url": "https://www.sciencedirect.com/science/article/pii/S0277953619306999"
+      },
+      {
+        "name": "How many people actually regret having children?",
+        "authors": [
+          "Anne Lise Stranden"
+        ],
+        "url": "https://sciencenorway.no/children/how-many-people-actually-regret-having-children/1898652"
+      }
+    ],
+    "consecutiveOutcomes": []
   }
 ]
