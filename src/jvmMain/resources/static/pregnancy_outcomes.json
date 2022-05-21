@@ -1252,5 +1252,158 @@
       }
     ],
     "consecutiveOutcomes": []
+  },
+  {
+    "name": "Psychopathy",
+    "commonNames": [],
+    "description": "Your child is a psychopath, which means they will suffer from deficient emotional responses, lack of empathy and poor behavioral controls.",
+    "isNegative": true,
+    "tags": {
+      "own": [
+        "postpartum-child"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://c.pxhere.com/photos/1e/05/clown_crazy_dark_girl_hair_mood_person_psycho-1166738.jpg!d",
+        "description": "A photo of a person in a dark setting.",
+        "source": "https://pxhere.com/en/photo/1166738"
+      }
+    ],
+    "chance": "1%",
+    "references": [
+      {
+        "name": "3 Key Traits That May Be Red Flags for Psychopathy",
+        "authors": [
+          "Melissa Burkley Ph.D."
+        ],
+        "url": "https://www.psychologytoday.com/us/blog/the-social-thinker/201801/3-key-traits-may-be-red-flags-psychopathy"
+      }
+    ],
+    "consecutiveOutcomes": []
+  },
+  {
+    "name": "Scientist",
+    "commonNames": [],
+    "description": "Your child has made it and became a researcher! Now on to that cure for cancer...",
+    "isNegative": false,
+    "tags": {
+      "own": [
+        "postpartum-child"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://live.staticflickr.com/5077/5908209186_b81413e6e6_6k.jpg",
+        "description": "A photo of a scientist looking through a microscope.",
+        "source": "https://www.flickr.com/photos/nestle/5908209186"
+      }
+    ],
+    "chance": "1 in 1000",
+    "references": [
+      {
+        "name": "Facts and figures from the UNESCO Science Report",
+        "authors": [],
+        "url": "https://en.unesco.org/unesco_science_report/figures"
+      }
+    ],
+    "consecutiveOutcomes": []
+  },
+  {
+    "name": "Bachelor's degree",
+    "commonNames": [],
+    "description": "Congratulations, your child now holds a Bachelor's degree!",
+    "isNegative": false,
+    "tags": {
+      "own": [
+        "postpartum-child",
+        "education-level"
+      ],
+      "excludes": [
+        "education-level"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://c.pxhere.com/photos/71/e6/accomplishment_achievement_blur_celebration_ceremony_curly_hair_depth_of_field_education-1567567.jpg!d",
+        "description": "A photo of a person wearing a graduation cap.",
+        "source": "https://pxhere.com/en/photo/1567567"
+      }
+    ],
+    "chance": "32%",
+    "references": [
+      {
+        "name": "New From U.S. Census Bureau: Number of Americans With A Bachelor’s Degree Continues To Grow",
+        "authors": [],
+        "url": "https://www.forbes.com/sites/michaeltnietzel/2021/02/22/new-from-us-census-bureau-number-of-americans-with-a-bachelors-degree-continues-to-grow/"
+      }
+    ],
+    "consecutiveOutcomes": []
+  },
+  {
+    "name": "Master's degree",
+    "commonNames": [],
+    "description": "Congratulations, your child now holds a Master's degree!",
+    "isNegative": false,
+    "tags": {
+      "own": [
+        "postpartum-child",
+        "education-level"
+      ],
+      "excludes": [
+        "education-level"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://c.pxhere.com/photos/71/e6/accomplishment_achievement_blur_celebration_ceremony_curly_hair_depth_of_field_education-1567567.jpg!d",
+        "description": "A photo of a person wearing a graduation cap.",
+        "source": "https://pxhere.com/en/photo/1567567"
+      }
+    ],
+    "chance": "639 in 10000",
+    "references": [
+      {
+        "name": "What Percentage of the Population Has a Master’s Degree?",
+        "authors": [
+          "Nathan Brunner"
+        ],
+        "url": "https://www.forbes.com/sites/michaeltnietzel/2021/02/22/new-from-us-census-bureau-number-of-americans-with-a-bachelors-degree-continues-to-grow/"
+      }
+    ],
+    "consecutiveOutcomes": []
+  },
+  {
+    "name": "Doctoral degree",
+    "commonNames": [],
+    "description": "Congratulations, your child now holds a Doctoral degree!",
+    "isNegative": false,
+    "tags": {
+      "own": [
+        "postpartum-child",
+        "education-level"
+      ],
+      "excludes": [
+        "education-level"
+      ]
+    },
+    "images": [
+      {
+        "url": "https://c.pxhere.com/photos/71/e6/accomplishment_achievement_blur_celebration_ceremony_curly_hair_depth_of_field_education-1567567.jpg!d",
+        "description": "A photo of a person wearing a graduation cap.",
+        "source": "https://pxhere.com/en/photo/1567567"
+      }
+    ],
+    "chance": "1%",
+    "references": [
+      {
+        "name": "How Rare (or Common) is it to have a PhD?",
+        "authors": [
+          "Alice Clubbs Coldron"
+        ],
+        "url": "https://www.findaphd.com/advice/blog/5403/how-rare-or-common-is-it-to-have-a-phd"
+      }
+    ],
+    "consecutiveOutcomes": []
   }
 ]
