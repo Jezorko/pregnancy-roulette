@@ -94,6 +94,15 @@
     perspective: 1000px;
 }
 
+.pregnancy-outcome-card-new {
+    position: absolute;
+    left: -10%;
+    top: -10%;
+    width: 20%;
+    height: 20%;
+    z-index: 999;
+}
+
 .pregnancy-outcome-card-inner {
     position: relative;
     width: 100%;

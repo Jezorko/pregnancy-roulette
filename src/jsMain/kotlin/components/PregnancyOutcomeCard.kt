@@ -7,21 +7,36 @@ import react.dom.html.ReactHTML.a
 import react.dom.html.ReactHTML.br
 import react.dom.html.ReactHTML.div
 import react.dom.html.ReactHTML.img
+import react.useState
 
 external interface PregnancyOutcomeCardProps : Props {
     var position: Int
     var pregnancyOutcome: PregnancyOutcome
+    var isNew: Boolean?
 }
 
 val PregnancyOutcomeCard = FC<PregnancyOutcomeCardProps> { props ->
     val pregnancyOutcome = props.pregnancyOutcome
     val prefix = "pregnancy-outcome-card"
+
+    var isNew: Boolean by useState(props.isNew ?: true)
+
     div {
         id = "$prefix-${props.position}"
         className = prefix
+        onMouseOver = { if (isNew) isNew = false }
         div {
             id = "$prefix-${props.position}-inner"
             className = "$prefix-inner"
+
+            if (isNew && (props.isNew == true)) {
+                img {
+                    id = "$prefix-${props.position}-new"
+                    className = "$prefix-new"
+                    src = "static/new_star.svg"
+                    alt = "New outcome"
+                }
+            }
 
             div {
                 id = "$prefix-${props.position}-front"
